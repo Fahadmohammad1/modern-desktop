@@ -3,7 +3,8 @@ import Head from "next/head";
 import RootLayout from "@/components/Layout/RootLayout";
 import ProductCard from "@/components/ProductCard";
 
-export default function Home() {
+export default function Home({products}) {
+  console.log(products);
   return (
     <>
       <Head>
@@ -25,5 +26,12 @@ Home.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch('')
+  const res = await fetch('http://localhost:3000/api/products')
+  const data = await res.json()
+
+  return {
+    props : {
+      products : data.data
+    }
+  }
 }
