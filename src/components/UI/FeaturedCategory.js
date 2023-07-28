@@ -1,15 +1,22 @@
 import React from "react";
-import CategoryCard from "./CategoryCard";
+import { Card } from "antd";
+import { BsCpu } from "react-icons/bs";
+import Link from "next/link";
 
-const FeaturedCategory = ({products}) => {
-  console.log(products);
+const FeaturedCategory = ({ products }) => {
+  
   return (
     <section>
-      <h2 className="text-center">Featured Categories</h2>
+      <h2 className="text-center my-10">Featured Categories</h2>
       <div className="lg:grid grid-cols-3 gap-5 ">
-        {
-          products.map(product => <CategoryCard key={product._id} category={product.category}/>)
-        }
+        <Link href="/category/cpu">
+        <Card className="flex flex-col justify-center items-center shadow-md">
+          <div className="flex justify-center">
+            <BsCpu className="text-7xl" />
+          </div>
+          <p className="font-medium text-center">CPU / Processor</p>
+        </Card>
+        </Link>
       </div>
     </section>
   );

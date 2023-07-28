@@ -37,9 +37,8 @@ const Home = ({ children }) => {
         }}
       >
         <div
-          className="site-layout-content"
+          className="site-layout-content bg-base-100"
           style={{
-            background: colorBgContainer,
             minHeight: "100vh",
           }}
         >

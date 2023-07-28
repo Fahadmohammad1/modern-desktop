@@ -4,7 +4,7 @@ import React from "react";
 
 const ProductCard = ({ product }) => {
   return (
-    <section>
+    <section className="mb-5">
       <div className="flex flex-col justify-center items-center">
         <Link href={`/product/${product._id}`}>
         <div className="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 w-full !p-4 3xl:p-![18px]">
@@ -37,19 +37,6 @@ const ProductCard = ({ product }) => {
                   Rating : {product.rating}
                 </p>
               </div>
-            </div>
-            <div className="flex items-center justify-between md:items-center lg:justify-between ">
-              <div className="flex">
-                <p className="!mb-0 text-sm font-bold text-brand-500">
-                  Current Bid: 0.91 <span>ETH</span>
-                </p>
-              </div>
-              <button
-                href=""
-                className="linear rounded-[20px] bg-brand-900 px-4 py-2 text-base font-medium text-white transition duration-200 hover:bg-brand-800 active:bg-brand-700"
-              >
-                Place Bid
-              </button>
             </div>
           </div>
         </div>

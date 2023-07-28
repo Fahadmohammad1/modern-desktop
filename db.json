@@ -1,63 +1,245 @@
 {
-    "components" : [
-        {
-          "image": "/image/link1",
-          "name": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
-          "category": "motherboard",
-          "price": "8000",
-          "status": "In Stock",
-          "rating": "5"
-        },
-        {
-          "image": "/image/link2",
-          "name": "AMD Ryzen 7 5800X 8-core Processor",
-          "category": "CPU",
-          "price": "25000",
-          "status": "In Stock",
-          "rating": "4.9"
-        },
-        {
-          "image": "/image/link3",
-          "name": "NVIDIA GeForce RTX 3080 Ti Graphics Card",
-          "category": "GPU",
-          "price": "45000",
-          "status": "In Stock",
-          "rating": "4.8"
-        },
-        {
-          "image": "/image/link4",
-          "name": "Corsair Vengeance LPX 16GB DDR4 RAM",
-          "category": "RAM",
-          "price": "5000",
-          "status": "In Stock",
-          "rating": "4.7"
-        },
-        {
-          "image": "/image/link5",
-          "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
-          "category": "Storage",
-          "price": "12000",
-          "status": "In Stock",
-          "rating": "4.9"
-        },
-        {
-          "image": "/image/link6",
-          "name": "EVGA 750 GQ 80+ Gold 750W PSU",
-          "category": "Power Supply",
-          "price": "8000",
-          "status": "In Stock",
-          "rating": "4.6"
-        },
-        
-    
-        {
-          "image": "/image/link9",
-          "name": "LG 27GL850-B 27 Inch QHD Gaming Monitor",
-          "category": "Monitor",
-          "price": "18000",
-          "status": "In Stock",
-          "rating": "4.9"
-        }
-      ]
-      
+  "components": [
+    {
+      "image": "/image/link2",
+      "name": "AMD Ryzen 7 5800X 8-core Processor",
+      "category": "CPU",
+      "price": "25000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/link1",
+      "name": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
+      "category": "motherboard",
+      "price": "8000",
+      "status": "In Stock",
+      "rating": "5"
+    },
+    {
+      "image": "/image/link4",
+      "name": "Corsair Vengeance LPX 16GB DDR4 RAM",
+      "category": "RAM",
+      "price": "5000",
+      "status": "In Stock",
+      "rating": "4.7"
+    },
+    {
+      "image": "/image/link5",
+      "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
+      "category": "Storage",
+      "price": "12000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/link6",
+      "name": "EVGA 750 GQ 80+ Gold 750W PSU",
+      "category": "Power Supply",
+      "price": "8000",
+      "status": "In Stock",
+      "rating": "4.6"
+    },
+    {
+      "image": "/image/link9",
+      "name": "LG 27GL850-B 27 Inch QHD Gaming Monitor",
+      "category": "Monitor",
+      "price": "18000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/link5",
+      "name": "G.SKILL Trident Z RGB Series 16GB DDR4 RAM",
+      "category": "RAM",
+      "price": "5500",
+      "status": "In Stock",
+      "rating": "4.8"
+    },
+    {
+      "image": "/image/link6",
+      "name": "Crucial Ballistix 32GB DDR4 RAM",
+      "category": "RAM",
+      "price": "9000",
+      "status": "In Stock",
+      "rating": "4.7"
+    },
+    {
+      "image": "/image/link7",
+      "name": "Kingston HyperX Fury 8GB DDR4 RAM",
+      "category": "RAM",
+      "price": "3500",
+      "status": "In Stock",
+      "rating": "4.6"
+    },
+    {
+      "image": "/image/link8",
+      "name": "Corsair Dominator Platinum 64GB DDR4 RAM",
+      "category": "RAM",
+      "price": "18000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/cpu-link1",
+      "name": "AMD Ryzen 7 5800X",
+      "category": "CPU",
+      "price": "30000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/cpu-link2",
+      "name": "Intel Core i9-11900K",
+      "category": "CPU",
+      "price": "35000",
+      "status": "In Stock",
+      "rating": "4.8"
+    },
+    {
+      "image": "/image/cpu-link3",
+      "name": "AMD Ryzen 9 5950X",
+      "category": "CPU",
+      "price": "45000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/cpu-link4",
+      "name": "Intel Core i7-11700K",
+      "category": "CPU",
+      "price": "28000",
+      "status": "In Stock",
+      "rating": "4.7"
+    },
+    {
+      "image": "/image/monitor-link1",
+      "name": "ASUS ROG Swift PG279Q",
+      "category": "Monitor",
+      "price": "25000",
+      "status": "In Stock",
+      "rating": "4.8"
+    },
+    {
+      "image": "/image/monitor-link2",
+      "name": "Dell S2721DGF",
+      "category": "Monitor",
+      "price": "20000",
+      "status": "Out of Stock",
+      "rating": "4.7"
+    },
+    {
+      "image": "/image/monitor-link3",
+      "name": "LG 27GL850-B",
+      "category": "Monitor",
+      "price": "22000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/monitor-link4",
+      "name": "Acer Predator XB271HU",
+      "category": "Monitor",
+      "price": "27000",
+      "status": "Out of Stock",
+      "rating": "4.8"
+    },
+    {
+      "image": "/image/motherboard-link1",
+      "name": "ASUS ROG Strix Z590-E Gaming",
+      "category": "Motherboard",
+      "price": "22000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "/image/motherboard-link2",
+      "name": "GIGABYTE X570 AORUS Elite",
+      "category": "Motherboard",
+      "price": "18000",
+      "status": "Out of Stock",
+      "rating": "4.7"
+    },
+    {
+      "image": "/image/motherboard-link3",
+      "name": "MSI MAG B550 TOMAHAWK",
+      "category": "Motherboard",
+      "price": "15000",
+      "status": "In Stock",
+      "rating": "4.8"
+    },
+    {
+      "image": "/image/motherboard-link4",
+      "name": "ASRock B560M Steel Legend",
+      "category": "Motherboard",
+      "price": "13000",
+      "status": "In Stock",
+      "rating": "4.6"
+    },
+    {
+      "image": "https://example.com/powersupply-link1.jpg",
+      "name": "Corsair RM750x 750W 80+ Gold",
+      "category": "Power Supply",
+      "price": "9000",
+      "status": "In Stock",
+      "rating": "4.8"
+    },
+    {
+      "image": "https://example.com/powersupply-link2.jpg",
+      "name": "EVGA SuperNOVA 850 G3 850W 80+ Gold",
+      "category": "Power Supply",
+      "price": "10000",
+      "status": "Out of Stock",
+      "rating": "4.7"
+    },
+    {
+      "image": "https://example.com/powersupply-link3.jpg",
+      "name": "Seasonic Focus GX-650 650W 80+ Gold",
+      "category": "Power Supply",
+      "price": "8000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "https://example.com/powersupply-link4.jpg",
+      "name": "Thermaltake Toughpower GF1 750W 80+ Gold",
+      "category": "Power Supply",
+      "price": "9500",
+      "status": "In Stock",
+      "rating": "4.6"
+    },
+    {
+      "image": "https://example.com/storage-link1.jpg",
+      "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
+      "category": "Storage",
+      "price": "8000",
+      "status": "In Stock",
+      "rating": "4.9"
+    },
+    {
+      "image": "https://example.com/storage-link2.jpg",
+      "name": "Western Digital Blue 2TB SATA SSD",
+      "category": "Storage",
+      "price": "12000",
+      "status": "In Stock",
+      "rating": "4.7"
+    },
+    {
+      "image": "https://example.com/storage-link3.jpg",
+      "name": "Seagate BarraCuda 4TB HDD",
+      "category": "Storage",
+      "price": "6000",
+      "status": "In Stock",
+      "rating": "4.6"
+    },
+    {
+      "image": "https://example.com/storage-link4.jpg",
+      "name": "Crucial MX500 500GB SATA SSD",
+      "category": "Storage",
+      "price": "5000",
+      "status": "Out of Stock",
+      "rating": "4.8"
+    }
+  
+  ]
 }
