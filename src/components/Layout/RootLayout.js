@@ -1,29 +1,31 @@
 import { Button, Layout, Menu, theme } from "antd";
-import DropdownMenu from "../DropdownMenu";
+import DropdownMenu from "../UI/DropdownMenu";
 const { Header, Content, Footer } = Layout;
+
 const Home = ({ children }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
     <Layout className="layout">
-      <Header className="flex bg-white justify-between items-center"
-      >
+      <Header className="lg:flex bg-white justify-between items-center">
         <div
           className="demo-logo"
-          style={{ fontSize: "20px", fontWeight: "bold", display : "flex", gap : "20px", alignItems : "center"}}
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            display: "flex",
+            gap: "20px",
+            alignItems: "center",
+          }}
         >
+          <div>Modern Desktop</div>
           <div>
-          Modern Desktop
-          </div>
-          <div>
-            <DropdownMenu/>
+            <DropdownMenu />
           </div>
         </div>
         <Menu mode="horizontal" defaultSelectedKeys={["2"]}>
-          <Button type="dashed">
-            PC Builder
-          </Button>
+          <Button type="dashed">PC Builder</Button>
         </Menu>
       </Header>
       <Content
