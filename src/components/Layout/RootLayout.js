@@ -1,5 +1,6 @@
 import { Button, Layout, Menu, theme } from "antd";
 import DropdownMenu from "../UI/DropdownMenu";
+import Link from "next/link";
 const { Header, Content, Footer } = Layout;
 
 const Home = ({ children }) => {
@@ -19,7 +20,7 @@ const Home = ({ children }) => {
             alignItems: "center",
           }}
         >
-          <div>Modern Desktop</div>
+          <Link href="/"><div>Modern Desktop</div></Link>
           <div>
             <DropdownMenu />
           </div>

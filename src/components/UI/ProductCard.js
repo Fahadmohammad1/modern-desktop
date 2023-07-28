@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ProductCard = ({ product }) => {
   return (
     <section>
       <div className="flex flex-col justify-center items-center">
-        <div className="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 w-full !p-4 3xl:p-![18px] undefined">
+        <Link href={`/product/${product._id}`}>
+        <div className="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 w-full !p-4 3xl:p-![18px]">
           <div className="h-full w-full">
             <div className="relative w-full">
               <Image
@@ -51,6 +53,7 @@ const ProductCard = ({ product }) => {
             </div>
           </div>
         </div>
+        </Link>
       </div>
     </section>
   );

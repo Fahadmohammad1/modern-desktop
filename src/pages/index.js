@@ -1,7 +1,5 @@
 import Head from "next/head";
-
 import RootLayout from "@/components/Layout/RootLayout";
-import ProductCard from "@/components/UI/ProductCard";
 import Products from "@/components/UI/Products";
 
 export default function Home({products}) {
