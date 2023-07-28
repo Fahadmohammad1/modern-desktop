@@ -1,6 +1,7 @@
 import Head from "next/head";
 import RootLayout from "@/components/Layout/RootLayout";
 import Products from "@/components/UI/Products";
+import FeaturedCategory from "@/components/UI/FeaturedCategory";
 
 export default function Home({products}) {
   
@@ -14,6 +15,7 @@ export default function Home({products}) {
       <main>
         <div>
           <Products products={products}/>
+          <FeaturedCategory products={products}/>
         </div>
       </main>
     </>

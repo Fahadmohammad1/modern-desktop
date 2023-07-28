@@ -20,7 +20,9 @@ const Home = ({ children }) => {
             alignItems: "center",
           }}
         >
-          <Link href="/"><div>Modern Desktop</div></Link>
+          <Link href="/">
+            <div>Modern Desktop</div>
+          </Link>
           <div>
             <DropdownMenu />
           </div>
