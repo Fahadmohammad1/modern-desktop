@@ -1,0 +1,63 @@
+{
+    "components" : [
+        {
+          "image": "/image/link1",
+          "name": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
+          "category": "motherboard",
+          "price": "8000",
+          "status": "In Stock",
+          "rating": "5"
+        },
+        {
+          "image": "/image/link2",
+          "name": "AMD Ryzen 7 5800X 8-core Processor",
+          "category": "CPU",
+          "price": "25000",
+          "status": "In Stock",
+          "rating": "4.9"
+        },
+        {
+          "image": "/image/link3",
+          "name": "NVIDIA GeForce RTX 3080 Ti Graphics Card",
+          "category": "GPU",
+          "price": "45000",
+          "status": "In Stock",
+          "rating": "4.8"
+        },
+        {
+          "image": "/image/link4",
+          "name": "Corsair Vengeance LPX 16GB DDR4 RAM",
+          "category": "RAM",
+          "price": "5000",
+          "status": "In Stock",
+          "rating": "4.7"
+        },
+        {
+          "image": "/image/link5",
+          "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
+          "category": "Storage",
+          "price": "12000",
+          "status": "In Stock",
+          "rating": "4.9"
+        },
+        {
+          "image": "/image/link6",
+          "name": "EVGA 750 GQ 80+ Gold 750W PSU",
+          "category": "Power Supply",
+          "price": "8000",
+          "status": "In Stock",
+          "rating": "4.6"
+        },
+        
+    
+        {
+          "image": "/image/link9",
+          "name": "LG 27GL850-B 27 Inch QHD Gaming Monitor",
+          "category": "Monitor",
+          "price": "18000",
+          "status": "In Stock",
+          "rating": "4.9"
+        }
+      ]
+      
+}

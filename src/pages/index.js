@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import RootLayout from "@/components/Layout/RootLayout";
+import ProductCard from "@/components/ProductCard";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <div>
-          <h1>This is home page</h1>
+          <ProductCard/>
         </div>
       </main>
     </>
@@ -22,3 +23,7 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
+
+export const getStaticProps = async () => {
+  const res = await fetch('')
+}

@@ -1,66 +1,54 @@
-import React from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import DropdownMenu from '../DropdownMenu';
+import { Button, Layout, Menu, theme } from "antd";
+import DropdownMenu from "../DropdownMenu";
 const { Header, Content, Footer } = Layout;
-const RootLayout = ({children}) => {
+const Home = ({ children }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
     <Layout className="layout">
-      <Header
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-        }}
+      <Header className="flex bg-white justify-between items-center"
       >
-        <div className="demo-logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={new Array(15).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: `nav ${key}`,
-            };
-          })}
-        />
+        <div
+          className="demo-logo"
+          style={{ fontSize: "20px", fontWeight: "bold", display : "flex", gap : "20px", alignItems : "center"}}
+        >
+          <div>
+          Modern Desktop
+          </div>
+          <div>
+            <DropdownMenu/>
+          </div>
+        </div>
+        <Menu mode="horizontal" defaultSelectedKeys={["2"]}>
+          <Button type="dashed">
+            PC Builder
+          </Button>
+        </Menu>
       </Header>
       <Content
         style={{
-          padding: '0 40px',
+          padding: "0 50px",
         }}
       >
-        <Breadcrumb
-          style={{
-            margin: '10px 0',
-            width : "100%",
-            padding : "20px",
-            boxShadow : "1px 2px 9px #F4AAB9"
-          }}
-        >
-          <Breadcrumb.Item><DropdownMenu/></Breadcrumb.Item>
-        </Breadcrumb>
         <div
           className="site-layout-content"
           style={{
             background: colorBgContainer,
-            minHeight : "100vh"
+            minHeight: "100vh",
           }}
         >
-         {children}
+          {children}
         </div>
       </Content>
       <Footer
         style={{
-          textAlign: 'center',
+          textAlign: "center",
         }}
       >
-        Ant Design ©2023 Created by Ant UED
+        Copyright ©2023 Created by Modern Desktop Bangladesh
       </Footer>
     </Layout>
   );
 };
-export default RootLayout;
+export default Home;
