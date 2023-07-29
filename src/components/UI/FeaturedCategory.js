@@ -3,7 +3,7 @@ import { Card } from "antd";
 import { BsCpu } from "react-icons/bs";
 import Link from "next/link";
 
-const FeaturedCategory = ({ products }) => {
+const FeaturedCategory = () => {
   
   return (
     <section>

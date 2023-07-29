@@ -21,8 +21,7 @@ const ProductCard = ({ product }) => {
             <div className="mb-3 flex items-center justify-between px-1 md:items-start">
               <div className="mb-2">
                 <p className="text-base font-bold text-navy-700">
-                  {" "}
-                  {product.name}{" "}
+                  {product.name}
                 </p>
                 <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">
                  Category : {product.category}
