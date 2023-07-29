@@ -6,31 +6,128 @@
       "category": "CPU",
       "price": "25000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "AMD Ryzen 7 5800X is a high-performance 8-core processor...",
+      "keyFeatures": {
+        "Brand": "AMD",
+        "Model": "Ryzen 7 5800X",
+        "Socket": "AM4",
+        "Core Count": "8",
+        "Thread Count": "16",
+        "Base Clock": "3.8 GHz",
+        "Max Boost Clock": "4.7 GHz",
+        "TDP": "105W"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Excellent processor, performs like a beast!"
+        },
+        {
+          "username": "User2",
+          "reviewText": "Very satisfied with the performance."
+        },
+        {
+          "username": "User3",
+          "reviewText": "Fast and reliable processor for gaming."
+        }
+      ]
     },
+
     {
       "image": "/image/link1",
       "name": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
-      "category": "motherboard",
+      "category": "Motherboard",
       "price": "8000",
       "status": "In Stock",
-      "rating": "5"
+      "rating": "5",
+      "description": "ASRock H81M-VG4 R4.0 is a reliable micro ATX motherboard...",
+      "keyFeatures": {
+        "Brand": "ASRock",
+        "Model": "H81M-VG4 R4.0",
+        "Form Factor": "Micro ATX",
+        "Socket": "LGA 1150",
+        "Chipset": "Intel H81",
+        "Memory Slots": "2",
+        "Max Memory": "16GB",
+        "Expansion Slots": "PCIe 2.0 x16, PCIe 2.0 x1"
+      },
+      "individualRating": "5",
+      "averageRating": "5",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Great motherboard with good features!"
+        },
+        {
+          "username": "User2",
+          "reviewText": "Reliable and easy to set up."
+        }
+      ]
     },
+
     {
       "image": "/image/link4",
       "name": "Corsair Vengeance LPX 16GB DDR4 RAM",
       "category": "RAM",
       "price": "5000",
       "status": "In Stock",
-      "rating": "4.7"
+      "rating": "4.7",
+      "description": "Corsair Vengeance LPX is a high-performance DDR4 RAM...",
+      "keyFeatures": {
+        "Brand": "Corsair",
+        "Model": "Vengeance LPX",
+        "Type": "DDR4",
+        "Capacity": "16GB (2 x 8GB)",
+        "Speed": "3200MHz",
+        "CAS Latency": "16",
+        "Voltage": "1.35V"
+      },
+      "individualRating": "4.7",
+      "averageRating": "4.7",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Fast and reliable RAM for gaming."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Great value for the price."
+        }
+      ]
     },
+
     {
       "image": "/image/link5",
       "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
       "category": "Storage",
       "price": "12000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "Samsung 970 EVO Plus is a high-speed NVMe SSD...",
+      "keyFeatures": {
+        "Brand": "Samsung",
+        "Model": "970 EVO Plus",
+        "Capacity": "1TB",
+        "Form Factor": "M.2",
+        "Interface": "NVMe PCIe 3.0 x4",
+        "Read Speed": "3500 MB/s",
+        "Write Speed": "3300 MB/s"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Blazing fast SSD, excellent for heavy workloads."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Impressive performance, highly recommended."
+        }
+      ]
     },
     {
       "image": "/image/link6",
@@ -38,7 +135,31 @@
       "category": "Power Supply",
       "price": "8000",
       "status": "In Stock",
-      "rating": "4.6"
+      "rating": "4.6",
+      "description": "EVGA 750 GQ is an efficient 750W power supply...",
+      "keyFeatures": {
+        "Brand": "EVGA",
+        "Model": "750 GQ",
+        "Wattage": "750W",
+        "Certification": "80+ Gold",
+        "Modular": "Semi-Modular",
+        "Efficiency": "90%",
+        "Fan Size": "135mm",
+        "Over Current Protection": "Yes",
+        "Over Voltage Protection": "Yes"
+      },
+      "individualRating": "4.6",
+      "averageRating": "4.6",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Solid and reliable power supply unit."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Efficient and quiet PSU, great value."
+        }
+      ]
     },
     {
       "image": "/image/link9",
@@ -46,7 +167,30 @@
       "category": "Monitor",
       "price": "18000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "LG 27GL850-B is a high-quality QHD gaming monitor...",
+      "keyFeatures": {
+        "Brand": "LG",
+        "Model": "27GL850-B",
+        "Screen Size": "27 inches",
+        "Resolution": "2560x1440 (QHD)",
+        "Panel Type": "Nano IPS",
+        "Refresh Rate": "144Hz",
+        "Response Time": "1ms (GtG)",
+        "HDR Support": "HDR10"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Amazing colors and smooth gaming experience."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Highly recommended for gaming enthusiasts."
+        }
+      ]
     },
     {
       "image": "/image/link5",
@@ -54,7 +198,30 @@
       "category": "RAM",
       "price": "5500",
       "status": "In Stock",
-      "rating": "4.8"
+      "rating": "4.8",
+      "description": "G.SKILL Trident Z RGB is a stylish DDR4 RAM...",
+      "keyFeatures": {
+        "Brand": "G.SKILL",
+        "Model": "Trident Z RGB",
+        "Type": "DDR4",
+        "Capacity": "16GB (2 x 8GB)",
+        "Speed": "3200MHz",
+        "CAS Latency": "16",
+        "Voltage": "1.35V",
+        "RGB Lighting": "Yes"
+      },
+      "individualRating": "4.8",
+      "averageRating": "4.8",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Stylish RAM with great performance."
+        },
+        {
+          "username": "User2",
+          "reviewText": "RGB lighting adds a nice touch to the build."
+        }
+      ]
     },
     {
       "image": "/image/link6",
@@ -62,7 +229,29 @@
       "category": "RAM",
       "price": "9000",
       "status": "In Stock",
-      "rating": "4.7"
+      "rating": "4.7",
+      "description": "Crucial Ballistix is a high-capacity DDR4 RAM...",
+      "keyFeatures": {
+        "Brand": "Crucial",
+        "Model": "Ballistix",
+        "Type": "DDR4",
+        "Capacity": "32GB (2 x 16GB)",
+        "Speed": "3600MHz",
+        "CAS Latency": "18",
+        "Voltage": "1.35V"
+      },
+      "individualRating": "4.7",
+      "averageRating": "4.7",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Great RAM for multitasking and heavy workloads."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Reliable and stable performance."
+        }
+      ]
     },
     {
       "image": "/image/link7",
@@ -70,7 +259,30 @@
       "category": "RAM",
       "price": "3500",
       "status": "In Stock",
-      "rating": "4.6"
+      "rating": "4.6",
+      "description": "Kingston HyperX Fury is a budget-friendly DDR4 RAM...",
+      "keyFeatures": {
+        "Brand": "Kingston",
+        "Model": "HyperX Fury",
+        "Type": "DDR4",
+        "Capacity": "8GB (1 x 8GB)",
+        "Speed": "2666MHz",
+        "CAS Latency": "16",
+        "Voltage": "1.2V",
+        "Heat Spreader": "Yes"
+      },
+      "individualRating": "4.6",
+      "averageRating": "4.6",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Affordable and performs well for daily use."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Good value for the price."
+        }
+      ]
     },
     {
       "image": "/image/link8",
@@ -78,7 +290,30 @@
       "category": "RAM",
       "price": "18000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "Corsair Dominator Platinum is a high-capacity DDR4 RAM...",
+      "keyFeatures": {
+        "Brand": "Corsair",
+        "Model": "Dominator Platinum",
+        "Type": "DDR4",
+        "Capacity": "64GB (4 x 16GB)",
+        "Speed": "3200MHz",
+        "CAS Latency": "16",
+        "Voltage": "1.35V",
+        "Heat Spreader": "Yes"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Excellent RAM for content creation and virtualization."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Stylish and high-performance RAM modules."
+        }
+      ]
     },
     {
       "image": "/image/cpu-link1",
@@ -86,7 +321,34 @@
       "category": "CPU",
       "price": "30000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "AMD Ryzen 7 5800X is a high-performance 8-core processor...",
+      "keyFeatures": {
+        "Brand": "AMD",
+        "Model": "Ryzen 7 5800X",
+        "Socket": "AM4",
+        "Core Count": "8",
+        "Thread Count": "16",
+        "Base Clock": "3.8 GHz",
+        "Max Boost Clock": "4.7 GHz",
+        "TDP": "105W"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Excellent processor, performs like a beast!"
+        },
+        {
+          "username": "User2",
+          "reviewText": "Very satisfied with the performance."
+        },
+        {
+          "username": "User3",
+          "reviewText": "Fast and reliable processor for gaming."
+        }
+      ]
     },
     {
       "image": "/image/cpu-link2",
@@ -94,7 +356,30 @@
       "category": "CPU",
       "price": "35000",
       "status": "In Stock",
-      "rating": "4.8"
+      "rating": "4.8",
+      "description": "Intel Core i9-11900K is a high-performance 11th Gen processor...",
+      "keyFeatures": {
+        "Brand": "Intel",
+        "Model": "Core i9-11900K",
+        "Socket": "LGA 1200",
+        "Core Count": "8",
+        "Thread Count": "16",
+        "Base Clock": "3.5 GHz",
+        "Max Turbo Frequency": "5.3 GHz",
+        "TDP": "125W"
+      },
+      "individualRating": "4.8",
+      "averageRating": "4.8",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Powerful CPU for gaming and content creation."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Impressive performance and overclocking capabilities."
+        }
+      ]
     },
     {
       "image": "/image/cpu-link3",
@@ -102,7 +387,30 @@
       "category": "CPU",
       "price": "45000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "AMD Ryzen 9 5950X is a top-tier 16-core processor...",
+      "keyFeatures": {
+        "Brand": "AMD",
+        "Model": "Ryzen 9 5950X",
+        "Socket": "AM4",
+        "Core Count": "16",
+        "Thread Count": "32",
+        "Base Clock": "3.4 GHz",
+        "Max Boost Clock": "4.9 GHz",
+        "TDP": "105W"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Beast of a CPU, great for multitasking and rendering."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Excellent for high-performance computing tasks."
+        }
+      ]
     },
     {
       "image": "/image/cpu-link4",
@@ -110,7 +418,30 @@
       "category": "CPU",
       "price": "28000",
       "status": "In Stock",
-      "rating": "4.7"
+      "rating": "4.7",
+      "description": "Intel Core i7-11700K is a high-performance 11th Gen processor...",
+      "keyFeatures": {
+        "Brand": "Intel",
+        "Model": "Core i7-11700K",
+        "Socket": "LGA 1200",
+        "Core Count": "8",
+        "Thread Count": "16",
+        "Base Clock": "3.6 GHz",
+        "Max Turbo Frequency": "5.0 GHz",
+        "TDP": "125W"
+      },
+      "individualRating": "4.7",
+      "averageRating": "4.7",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Fast and reliable CPU for gaming and productivity."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Good value for the performance."
+        }
+      ]
     },
     {
       "image": "/image/monitor-link1",
@@ -118,7 +449,31 @@
       "category": "Monitor",
       "price": "25000",
       "status": "In Stock",
-      "rating": "4.8"
+      "rating": "4.8",
+      "description": "ASUS ROG Swift PG279Q is a high-quality QHD gaming monitor...",
+      "keyFeatures": {
+        "Brand": "ASUS",
+        "Model": "ROG Swift PG279Q",
+        "Screen Size": "27 inches",
+        "Resolution": "2560x1440 (QHD)",
+        "Panel Type": "IPS",
+        "Refresh Rate": "165Hz",
+        "Response Time": "4ms (GtG)",
+        "G-Sync Support": "Yes",
+        "Ports": "HDMI, DisplayPort, USB 3.0"
+      },
+      "individualRating": "4.8",
+      "averageRating": "4.8",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Excellent colors and smooth gaming experience."
+        },
+        {
+          "username": "User2",
+          "reviewText": "G-Sync works flawlessly, no screen tearing."
+        }
+      ]
     },
     {
       "image": "/image/monitor-link2",
@@ -126,7 +481,32 @@
       "category": "Monitor",
       "price": "20000",
       "status": "Out of Stock",
-      "rating": "4.7"
+      "rating": "4.7",
+      "description": "Dell S2721DGF is a high-performance QHD gaming monitor...",
+      "keyFeatures": {
+        "Brand": "Dell",
+        "Model": "S2721DGF",
+        "Screen Size": "27 inches",
+        "Resolution": "2560x1440 (QHD)",
+        "Panel Type": "IPS",
+        "Refresh Rate": "165Hz",
+        "Response Time": "1ms (MPRT)",
+        "FreeSync Support": "Yes",
+        "HDR Support": "Yes",
+        "Ports": "HDMI, DisplayPort, USB 3.0"
+      },
+      "individualRating": "4.7",
+      "averageRating": "4.7",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Impressive monitor for gaming and media consumption."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Great color accuracy and fast response time."
+        }
+      ]
     },
     {
       "image": "/image/monitor-link3",
@@ -134,7 +514,31 @@
       "category": "Monitor",
       "price": "22000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "LG 27GL850-B is a high-quality QHD gaming monitor...",
+      "keyFeatures": {
+        "Brand": "LG",
+        "Model": "27GL850-B",
+        "Screen Size": "27 inches",
+        "Resolution": "2560x1440 (QHD)",
+        "Panel Type": "Nano IPS",
+        "Refresh Rate": "144Hz",
+        "Response Time": "1ms (GtG)",
+        "HDR Support": "HDR10",
+        "Ports": "HDMI, DisplayPort, USB 3.0"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Amazing colors and smooth gaming experience."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Highly recommended for gaming enthusiasts."
+        }
+      ]
     },
     {
       "image": "/image/monitor-link4",
@@ -142,7 +546,31 @@
       "category": "Monitor",
       "price": "27000",
       "status": "Out of Stock",
-      "rating": "4.8"
+      "rating": "4.8",
+      "description": "Acer Predator XB271HU is a high-performance QHD gaming monitor...",
+      "keyFeatures": {
+        "Brand": "Acer",
+        "Model": "Predator XB271HU",
+        "Screen Size": "27 inches",
+        "Resolution": "2560x1440 (QHD)",
+        "Panel Type": "IPS",
+        "Refresh Rate": "165Hz",
+        "Response Time": "4ms (GtG)",
+        "G-Sync Support": "Yes",
+        "Ports": "HDMI, DisplayPort, USB 3.0"
+      },
+      "individualRating": "4.8",
+      "averageRating": "4.8",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Excellent monitor for gaming, very immersive."
+        },
+        {
+          "username": "User2",
+          "reviewText": "G-Sync works flawlessly, no screen tearing."
+        }
+      ]
     },
     {
       "image": "/image/motherboard-link1",
@@ -150,15 +578,61 @@
       "category": "Motherboard",
       "price": "22000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "ASUS ROG Strix Z590-E Gaming is a high-end motherboard...",
+      "keyFeatures": {
+        "Brand": "ASUS",
+        "Model": "ROG Strix Z590-E Gaming",
+        "Form Factor": "ATX",
+        "Socket": "LGA 1200",
+        "Chipset": "Intel Z590",
+        "Memory Slots": "4",
+        "Max Memory": "128GB",
+        "Expansion Slots": "PCIe 4.0 x16, PCIe 3.0 x16, PCIe 3.0 x1"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "High-quality motherboard with great features."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Excellent performance and overclocking capabilities."
+        }
+      ]
     },
     {
       "image": "/image/motherboard-link2",
       "name": "GIGABYTE X570 AORUS Elite",
       "category": "Motherboard",
-      "price": "18000",
-      "status": "Out of Stock",
-      "rating": "4.7"
+      "price": "17000",
+      "status": "In Stock",
+      "rating": "4.7",
+      "description": "GIGABYTE X570 AORUS Elite is a high-performance motherboard...",
+      "keyFeatures": {
+        "Brand": "GIGABYTE",
+        "Model": "X570 AORUS Elite",
+        "Form Factor": "ATX",
+        "Socket": "AM4",
+        "Chipset": "AMD X570",
+        "Memory Slots": "4",
+        "Max Memory": "128GB",
+        "Expansion Slots": "PCIe 4.0 x16, PCIe 4.0 x1"
+      },
+      "individualRating": "4.7",
+      "averageRating": "4.7",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Great motherboard with good VRM for Ryzen CPUs."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Stable and reliable for gaming and overclocking."
+        }
+      ]
     },
     {
       "image": "/image/motherboard-link3",
@@ -166,7 +640,30 @@
       "category": "Motherboard",
       "price": "15000",
       "status": "In Stock",
-      "rating": "4.8"
+      "rating": "4.8",
+      "description": "MSI MAG B550 TOMAHAWK is a feature-packed motherboard...",
+      "keyFeatures": {
+        "Brand": "MSI",
+        "Model": "MAG B550 TOMAHAWK",
+        "Form Factor": "ATX",
+        "Socket": "AM4",
+        "Chipset": "AMD B550",
+        "Memory Slots": "4",
+        "Max Memory": "128GB",
+        "Expansion Slots": "PCIe 4.0 x16, PCIe 3.0 x16, PCIe 3.0 x1"
+      },
+      "individualRating": "4.8",
+      "averageRating": "4.8",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Solid and reliable motherboard for Ryzen CPUs."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Good value for the features it offers."
+        }
+      ]
     },
     {
       "image": "/image/motherboard-link4",
@@ -174,7 +671,30 @@
       "category": "Motherboard",
       "price": "13000",
       "status": "In Stock",
-      "rating": "4.6"
+      "rating": "4.6",
+      "description": "ASRock B560M Steel Legend is a micro ATX motherboard...",
+      "keyFeatures": {
+        "Brand": "ASRock",
+        "Model": "B560M Steel Legend",
+        "Form Factor": "Micro ATX",
+        "Socket": "LGA 1200",
+        "Chipset": "Intel B560",
+        "Memory Slots": "4",
+        "Max Memory": "128GB",
+        "Expansion Slots": "PCIe 4.0 x16, PCIe 3.0 x1"
+      },
+      "individualRating": "4.6",
+      "averageRating": "4.6",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Compact motherboard with good performance."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Perfect for a compact gaming PC build."
+        }
+      ]
     },
     {
       "image": "https://example.com/powersupply-link1.jpg",
@@ -182,7 +702,31 @@
       "category": "Power Supply",
       "price": "9000",
       "status": "In Stock",
-      "rating": "4.8"
+      "rating": "4.8",
+      "description": "Corsair RM750x is an efficient 750W power supply...",
+      "keyFeatures": {
+        "Brand": "Corsair",
+        "Model": "RM750x",
+        "Wattage": "750W",
+        "Certification": "80+ Gold",
+        "Modular": "Fully Modular",
+        "Efficiency": "90%",
+        "Fan Size": "140mm",
+        "Over Current Protection": "Yes",
+        "Over Voltage Protection": "Yes"
+      },
+      "individualRating": "4.8",
+      "averageRating": "4.8",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Reliable power supply with minimal noise."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Efficient and stable performance."
+        }
+      ]
     },
     {
       "image": "https://example.com/powersupply-link2.jpg",
@@ -190,7 +734,31 @@
       "category": "Power Supply",
       "price": "10000",
       "status": "Out of Stock",
-      "rating": "4.7"
+      "rating": "4.7",
+      "description": "EVGA SuperNOVA G3 is a high-performance 850W PSU...",
+      "keyFeatures": {
+        "Brand": "EVGA",
+        "Model": "SuperNOVA 850 G3",
+        "Wattage": "850W",
+        "Certification": "80+ Gold",
+        "Modular": "Fully Modular",
+        "Efficiency": "90%",
+        "Fan Size": "130mm",
+        "Over Current Protection": "Yes",
+        "Over Voltage Protection": "Yes"
+      },
+      "individualRating": "4.7",
+      "averageRating": "4.7",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "High-quality power supply, works flawlessly."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Great PSU for high-end gaming builds."
+        }
+      ]
     },
     {
       "image": "https://example.com/powersupply-link3.jpg",
@@ -198,7 +766,31 @@
       "category": "Power Supply",
       "price": "8000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "Seasonic Focus GX-650 is a reliable 650W power supply...",
+      "keyFeatures": {
+        "Brand": "Seasonic",
+        "Model": "Focus GX-650",
+        "Wattage": "650W",
+        "Certification": "80+ Gold",
+        "Modular": "Semi-Modular",
+        "Efficiency": "90%",
+        "Fan Size": "120mm",
+        "Over Current Protection": "Yes",
+        "Over Voltage Protection": "Yes"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Quiet and efficient power supply."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Reliable and stable performance."
+        }
+      ]
     },
     {
       "image": "https://example.com/powersupply-link4.jpg",
@@ -206,7 +798,31 @@
       "category": "Power Supply",
       "price": "9500",
       "status": "In Stock",
-      "rating": "4.6"
+      "rating": "4.6",
+      "description": "Thermaltake Toughpower GF1 is a 750W PSU with 80+ Gold...",
+      "keyFeatures": {
+        "Brand": "Thermaltake",
+        "Model": "Toughpower GF1",
+        "Wattage": "750W",
+        "Certification": "80+ Gold",
+        "Modular": "Fully Modular",
+        "Efficiency": "90%",
+        "Fan Size": "140mm",
+        "Over Current Protection": "Yes",
+        "Over Voltage Protection": "Yes"
+      },
+      "individualRating": "4.6",
+      "averageRating": "4.6",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Solid and stable power supply."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Great value for a fully modular PSU."
+        }
+      ]
     },
     {
       "image": "https://example.com/storage-link1.jpg",
@@ -214,7 +830,29 @@
       "category": "Storage",
       "price": "8000",
       "status": "In Stock",
-      "rating": "4.9"
+      "rating": "4.9",
+      "description": "Samsung 970 EVO Plus is a high-performance NVMe SSD...",
+      "keyFeatures": {
+        "Brand": "Samsung",
+        "Model": "970 EVO Plus",
+        "Capacity": "1TB",
+        "Interface": "NVMe PCIe 3.0 x4",
+        "Read Speed": "3500MB/s",
+        "Write Speed": "3300MB/s",
+        "Form Factor": "M.2 2280"
+      },
+      "individualRating": "4.9",
+      "averageRating": "4.9",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Blazing fast SSD, great for OS and games."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Reliable storage solution, excellent performance."
+        }
+      ]
     },
     {
       "image": "https://example.com/storage-link2.jpg",
@@ -222,7 +860,29 @@
       "category": "Storage",
       "price": "12000",
       "status": "In Stock",
-      "rating": "4.7"
+      "rating": "4.7",
+      "description": "Western Digital Blue is a high-capacity SATA SSD...",
+      "keyFeatures": {
+        "Brand": "Western Digital",
+        "Model": "Blue",
+        "Capacity": "2TB",
+        "Interface": "SATA III",
+        "Read Speed": "560MB/s",
+        "Write Speed": "530MB/s",
+        "Form Factor": "2.5-inch"
+      },
+      "individualRating": "4.7",
+      "averageRating": "4.7",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Fast and reliable SATA SSD for storage needs."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Good value for a high-capacity SSD."
+        }
+      ]
     },
     {
       "image": "https://example.com/storage-link3.jpg",
@@ -230,7 +890,28 @@
       "category": "Storage",
       "price": "6000",
       "status": "In Stock",
-      "rating": "4.6"
+      "rating": "4.6",
+      "description": "Seagate BarraCuda is a high-capacity 3.5-inch HDD...",
+      "keyFeatures": {
+        "Brand": "Seagate",
+        "Model": "BarraCuda",
+        "Capacity": "4TB",
+        "Interface": "SATA III",
+        "RPM": "5400",
+        "Form Factor": "3.5-inch"
+      },
+      "individualRating": "4.6",
+      "averageRating": "4.6",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Reliable and spacious HDD for storage."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Good value for a large-capacity HDD."
+        }
+      ]
     },
     {
       "image": "https://example.com/storage-link4.jpg",
@@ -238,8 +919,29 @@
       "category": "Storage",
       "price": "5000",
       "status": "Out of Stock",
-      "rating": "4.8"
+      "rating": "4.8",
+      "description": "Crucial MX500 is a reliable SATA SSD with 500GB capacity...",
+      "keyFeatures": {
+        "Brand": "Crucial",
+        "Model": "MX500",
+        "Capacity": "500GB",
+        "Interface": "SATA III",
+        "Read Speed": "560MB/s",
+        "Write Speed": "510MB/s",
+        "Form Factor": "2.5-inch"
+      },
+      "individualRating": "4.8",
+      "averageRating": "4.8",
+      "reviews": [
+        {
+          "username": "User1",
+          "reviewText": "Fast and affordable SATA SSD for everyday use."
+        },
+        {
+          "username": "User2",
+          "reviewText": "Good performance, worth the price."
+        }
+      ]
     }
-  
   ]
 }

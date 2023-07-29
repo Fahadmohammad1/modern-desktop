@@ -4,14 +4,14 @@ import RootLayout from "@/components/Layout/RootLayout";
 import Image from 'next/image';
 
 const ProductDetailPage = ({product}) => {
-    console.log(product);
+  
     return (
-        <section>
-           <div className='lg:grid grid-cols-2 mt-5'>
-           <div className=''>
-                <Image src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB" width={600} height={500} alt='component'></Image>
+        <section className='flex justify-center items-center h-screen'>
+           <div className='lg:grid grid-cols-12 gap-10'>
+           <div className='lg:col-span-5'>
+                <Image src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB" width={500} height={350} alt='component'></Image>
             </div>
-            <div className=''>
+            <div className='lg:col-span-7'>
             <p className="text-xl font-bold text-navy-700">
                   {product.name}
                 </p>
