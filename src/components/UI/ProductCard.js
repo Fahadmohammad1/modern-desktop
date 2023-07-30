@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const ProductCard = ({ product }) => {
-  const router = useRouter()
+  
   return (
     <section className="mb-5">
       <div className="flex flex-col justify-center items-center">

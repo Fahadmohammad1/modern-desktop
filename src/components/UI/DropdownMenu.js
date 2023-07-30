@@ -17,7 +17,7 @@ const items = [
     key: "2",
   },
   {
-    label: <Link href="/category/power-supply-unit">Power Supply Unit</Link>,
+    label: <Link href="/category/power supply">Power Supply Unit</Link>,
     key: "3",
   },
   {

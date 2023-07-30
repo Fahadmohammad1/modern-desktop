@@ -24,7 +24,7 @@ ProductsByCategoryPage.getLayout = function getLayout(page) {
     const data = await res.json();
     const paths = data?.data?.map((product) => ({
       params: {
-        category: product.category,
+        category: product._id,
       },
     }));
   
