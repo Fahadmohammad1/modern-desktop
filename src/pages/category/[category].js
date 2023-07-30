@@ -42,6 +42,5 @@ ProductsByCategoryPage.getLayout = function getLayout(page) {
       props: {
         products: data.data,
       },
-      revalidate: 30,
     };
   };
