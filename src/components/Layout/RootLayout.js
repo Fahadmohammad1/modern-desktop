@@ -2,8 +2,11 @@ import { Button, Layout, Menu, theme } from "antd";
 import DropdownMenu from "../UI/DropdownMenu";
 import Link from "next/link";
 const { Header, Content, Footer } = Layout;
+import { useSession, signOut } from "next-auth/react";
 
 const Home = ({ children }) => {
+  const { data: session } = useSession();
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -28,8 +31,18 @@ const Home = ({ children }) => {
           </div>
         </div>
         <Menu mode="horizontal" defaultSelectedKeys={["2"]}>
-          <Button className="mr-3" type="dashed"><Link href="/login">Login</Link></Button>
-          <Button type="dashed"><Link href="/pc-builder">PC Builder</Link></Button>
+          {!session?.user ? (
+            <Button className="mr-3" type="dashed">
+              <Link href="/login">Login</Link>
+            </Button>
+          ) : (
+            <Button onClick={() => signOut()} className="mr-3" type="dashed">
+              LogOut
+            </Button>
+          )}
+          <Button type="dashed">
+            <Link href="/pc-builder">PC Builder</Link>
+          </Button>
         </Menu>
       </Header>
       <Content
