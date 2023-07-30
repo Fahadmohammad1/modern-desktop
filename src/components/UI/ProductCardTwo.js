@@ -8,11 +8,11 @@ const ProductCardTwo = ({ product }) => {
 
   const [addToBuilder, {isLoading, isSuccess}] = useAddToBuilderMutation()
 
-  const handleAddToBuilder = (categroyName,product) => {
+  const handleAddToBuilder = (product) => {
     const data = {
       email : 'tanvir@gmail.com',
       products: [
-        {[categroyName] : product}
+        {...product}
       ]
     }
     addToBuilder(data)
@@ -45,7 +45,7 @@ const ProductCardTwo = ({ product }) => {
           Rating : {product.rating}
         </p>
         <div className="flex justify-end -mt-8">
-          <button onClick={() => handleAddToBuilder(product.category,product)}>Add To Builder</button>
+          <button onClick={() => handleAddToBuilder(product)}>Add To Builder</button>
         </div>
       </div>
     </div>

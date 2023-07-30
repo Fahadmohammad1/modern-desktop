@@ -28,6 +28,7 @@ const Home = ({ children }) => {
           </div>
         </div>
         <Menu mode="horizontal" defaultSelectedKeys={["2"]}>
+          <Button className="mr-3" type="dashed"><Link href="/login">Login</Link></Button>
           <Button type="dashed"><Link href="/pc-builder">PC Builder</Link></Button>
         </Menu>
       </Header>
