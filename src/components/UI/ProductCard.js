@@ -5,7 +5,6 @@ import React from "react";
 
 const ProductCard = ({ product }) => {
   const router = useRouter()
-  console.log(router);
   return (
     <section className="mb-5">
       <div className="flex flex-col justify-center items-center">

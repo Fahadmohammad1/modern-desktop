@@ -1,7 +1,25 @@
+import { useAddToBuilderMutation } from "@/redux/api/api";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 
 const ProductCardTwo = ({ product }) => {
+  const router = useRouter()
+
+  const [addToBuilder, {isLoading, isSuccess}] = useAddToBuilderMutation()
+
+  const handleAddToBuilder = (categroyName,product) => {
+    const data = {
+      email : 'tanvir@gmail.com',
+      products: [
+        {[categroyName] : product}
+      ]
+    }
+    addToBuilder(data)
+    router.push({
+      pathname: '/pc-builder',
+    });
+  };
   return (
     <div className="mb-8 lg:flex lg:gap-10 shadow-xl p-5 rounded-xl">
       <div className="flex items-center lg:p-5">
@@ -27,7 +45,7 @@ const ProductCardTwo = ({ product }) => {
           Rating : {product.rating}
         </p>
         <div className="flex justify-end -mt-8">
-          <button>Choose</button>
+          <button onClick={() => handleAddToBuilder(product.category,product)}>Add To Builder</button>
         </div>
       </div>
     </div>
