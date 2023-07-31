@@ -6,6 +6,7 @@ import { CiMonitor } from "react-icons/ci";
 import { MdOutlinePower } from "react-icons/md";
 import { CgSmartphoneRam } from "react-icons/cg";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const PcBuilderPage = ({ products }) => {
   console.log(products);
@@ -58,32 +59,47 @@ const PcBuilderPage = ({ products }) => {
         </h1>
         <hr className="mb-5" />
         {categories.map((category) => (
-          <Card bordered={false} key={category.key}>
-            <div className="flex justify-between items-center mb-10">
-              <div className="flex gap-5 items-center">
-                {category.icon}
-                <p>{category.name}</p>
+          <div key={category.key}>
+            <Card bordered={false} key={category.key}>
+              <div className="flex justify-between items-center mb-10">
+                <div className="flex gap-5 items-center">
+                  {category.icon}
+                  <p>{category.name}</p>
+                </div>
+                <div>
+                  <button
+                    onClick={() =>
+                      router.push(`/pc-builder/category/${category.category}`)
+                    }
+                    className="btn p-1"
+                  >
+                    Choose
+                  </button>
+                </div>
               </div>
-              <div>
-                <button
-                  onClick={() =>
-                    router.push(`/pc-builder/category/${category.category}`)
-                  }
-                  className="btn p-1"
-                >
-                  Choose
-                </button>
-              </div>
-            </div>
-            {products.map(
-              (product) =>
-                product.category === category.category && (
-                  <div key={product._id}>
-                    <h1>{product.name}</h1>
-                  </div>
-                )
-            )}
-          </Card>
+              {products?.map(
+                (product) =>
+                  product.category.toUpperCase() === category.category && (
+                    <div
+                      key={product._id}
+                      className="flex justify-between items-center"
+                    >
+                      <div>
+                        <Image
+                          src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB"
+                          width={60}
+                          height={60}
+                          alt="product"
+                        />
+                      </div>
+                      <div>
+                        <h1>{product.name}</h1>
+                      </div>
+                    </div>
+                  )
+              )}
+            </Card>
+          </div>
         ))}
       </Card>
     </section>
@@ -104,7 +120,7 @@ export const getServerSideProps = async (context) => {
 
   return {
     props: {
-      products: data?.data?.products,
+      products: data?.data?.products || [],
     },
   };
 };
