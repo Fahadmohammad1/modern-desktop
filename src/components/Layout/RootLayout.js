@@ -60,9 +60,7 @@ const Home = ({ children }) => {
         </div>
       </Content>
       <Footer
-        style={{
-          textAlign: "center",
-        }}
+       className="text-center my-5"
       >
         Copyright ©2023 Created by Modern Desktop Bangladesh
       </Footer>

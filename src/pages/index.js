@@ -13,10 +13,12 @@ export default function Home({ products }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <div>
-          <Banner/>
-          <Products products={products} />
-          <FeaturedCategory products={products} />
+        <div >
+          <Banner />
+          <div className="px-10">
+            <Products products={products} />
+            <FeaturedCategory products={products} />
+          </div>
         </div>
       </main>
     </>

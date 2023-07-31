@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
 
 const ProductCard = ({ product }) => {
@@ -13,11 +12,11 @@ const ProductCard = ({ product }) => {
           <div className="h-full w-full">
             <div className="relative w-full">
               <Image
-                width="500"
-                height={500}
+                width={400}
+                height={400}
                 src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB"
                 className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
-                alt=""
+                alt="product"
               />
             </div>
             <div className="mb-3 flex items-center justify-between px-1 md:items-start">

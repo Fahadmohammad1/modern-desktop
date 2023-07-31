@@ -11,7 +11,7 @@ const FeaturedCategory = () => {
   return (
     <section>
       <h2 className="text-center my-10">Featured Categories</h2>
-      <div className="lg:grid grid-cols-3 gap-5">
+      <div className="lg:grid grid-cols-4 gap-5">
         <Link href="/category/cpu">
         <Card className="flex flex-col justify-center items-center shadow-md">
           <div className="flex justify-center">
