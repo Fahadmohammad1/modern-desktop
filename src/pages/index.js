@@ -3,8 +3,7 @@ import RootLayout from "@/components/Layout/RootLayout";
 import Products from "@/components/UI/Products";
 import FeaturedCategory from "@/components/UI/FeaturedCategory";
 
-export default function Home({products}) {
-  
+export default function Home({ products }) {
   return (
     <>
       <Head>
@@ -14,8 +13,8 @@ export default function Home({products}) {
       </Head>
       <main>
         <div>
-          <Products products={products}/>
-          <FeaturedCategory products={products}/>
+          <Products products={products} />
+          <FeaturedCategory products={products} />
         </div>
       </main>
     </>
@@ -27,13 +26,23 @@ Home.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
+  // if (typeof window === "undefined") {
+  //   return {
+  //     props: {
+  //       products: [],
+  //     },
+  //   };
+  // }
 
-  const res = await fetch('http://localhost:5000/products')
-  const data = await res.json()
+  const res = await fetch(`${process.env.URL}/products`);
+  const data = await res.json();
 
   return {
-    props : {
-      products : data.data.slice().sort(() => Math.random() - 0.5).slice(0,6)
-    }
-  }
-}
+    props: {
+      products: data.data
+        .slice()
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 6),
+    },
+  };
+};

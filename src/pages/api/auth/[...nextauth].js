@@ -8,9 +8,9 @@ export const authOptions = {
       clientSecret: process.env.GITHUB_SECRET,
     }),
   ],
-  pages : {
-    signIn : "http://localhost:3000/login"
-  }
+  pages: {
+    signIn: "https://modern-desktop.vercel.app/login",
+  },
 };
 
 export default NextAuth(authOptions);
