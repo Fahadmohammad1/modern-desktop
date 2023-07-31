@@ -2,6 +2,7 @@ import Head from "next/head";
 import RootLayout from "@/components/Layout/RootLayout";
 import Products from "@/components/UI/Products";
 import FeaturedCategory from "@/components/UI/FeaturedCategory";
+import Banner from "@/components/Banner";
 
 export default function Home({ products }) {
   return (
@@ -13,6 +14,7 @@ export default function Home({ products }) {
       </Head>
       <main>
         <div>
+          <Banner/>
           <Products products={products} />
           <FeaturedCategory products={products} />
         </div>

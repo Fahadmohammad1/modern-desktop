@@ -47,7 +47,7 @@ const Home = ({ children }) => {
       </Header>
       <Content
         style={{
-          padding: "0 50px",
+          padding: "0 0px",
         }}
       >
         <div
