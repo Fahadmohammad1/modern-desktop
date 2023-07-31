@@ -115,7 +115,7 @@ PcBuilderPage.getLayout = function getLayout(page) {
 export const getServerSideProps = async (context) => {
   const { params } = context;
   const email = "tanvir@gmail.com";
-  const res = await fetch(`http://localhost:5000/builder-products/${email}`);
+  const res = await fetch(`${process.env.URL}/builder-products/${email}`);
   const data = await res.json();
 
   return {

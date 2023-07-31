@@ -19,11 +19,11 @@ ProductsByCategoryPage.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/category");
+  const res = await fetch(`${process.env.URL}/category`);
   const data = await res.json();
   const paths = data?.data?.map((product) => ({
     params: {
-      category: product._id,
+      category: product.category,
     },
   }));
 
@@ -31,13 +31,13 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-//   if (typeof window === "undefined") {
-//     return {
-//       props: {
-//         products: []
-//       },
-//     };
-//   }
+  //   if (typeof window === "undefined") {
+  //     return {
+  //       props: {
+  //         products: []
+  //       },
+  //     };
+  //   }
   const { params } = context;
 
   const res = await fetch(

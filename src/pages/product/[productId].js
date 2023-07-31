@@ -41,7 +41,7 @@ ProductDetailPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-  export const getStaticPaths = async () => {
+export const getStaticPaths = async () => {
   const res = await fetch(`${process.env.URL}/products`);
   const data = await res.json();
 
@@ -52,21 +52,21 @@ ProductDetailPage.getLayout = function getLayout(page) {
   return { paths, fallback: false };
 };
 
-  export const getStaticProps = async (context) => {
-    // if(typeof window === 'undefined') {
-    //   return {
-    //     props : {
-    //       product : {}
-    //     }
-    //   }
-    // }
-    const {params} = context
-    const res = await fetch(`http://localhost:5000/products/${params.productId}`)
-    const data = await res.json()
+export const getStaticProps = async (context) => {
+  // if(typeof window === 'undefined') {
+  //   return {
+  //     props : {
+  //       product : {}
+  //     }
+  //   }
+  // }
+  const { params } = context;
+  const res = await fetch(`${process.env.URL}/products/${params.productId}`);
+  const data = await res.json();
 
-    return {
-      props : {
-        product : data.data
-      }
-    }
-  }
+  return {
+    props: {
+      product: data.data,
+    },
+  };
+};
