@@ -3,13 +3,20 @@ import DropdownMenu from "../UI/DropdownMenu";
 import Link from "next/link";
 const { Header, Content, Footer } = Layout;
 import { useSession, signOut } from "next-auth/react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "@/firebase/firebase.auth";
 
 const Home = ({ children }) => {
   const { data: session } = useSession();
+  const [user, loading] = useAuthState(auth);
 
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  if(loading){
+    return <p>Loading...</p>
+  }
   return (
     <Layout className="layout">
       <Header className="lg:flex bg-white justify-between items-center">
@@ -24,23 +31,23 @@ const Home = ({ children }) => {
           }}
         >
           <Link href="/">
-            <div>Modern Desktop</div>
+            <div className="decoration-transparent lg:text-2xl font-bold font-serif">Modern Desktop</div>
           </Link>
           <div>
             <DropdownMenu />
           </div>
         </div>
         <Menu mode="horizontal" defaultSelectedKeys={["2"]}>
-          {!session?.user ? (
-            <Button className="mr-3" type="dashed">
+          {(!session?.user || !user.email) ? (
+            <Button className="mr-3 font-bold" type="dashed">
               <Link href="/login">Login</Link>
             </Button>
           ) : (
-            <Button onClick={() => signOut()} className="mr-3" type="dashed">
+            <Button onClick={() => signOut()} className="mr-3 font-bold" type="dashed">
               LogOut
             </Button>
           )}
-          <Button type="dashed">
+          <Button className="font-bold" type="dashed">
             <Link href="/pc-builder">PC Builder</Link>
           </Button>
         </Menu>

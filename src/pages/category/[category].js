@@ -4,7 +4,7 @@ import ProductCard from "@/components/UI/ProductCard";
 
 const ProductsByCategoryPage = ({ products }) => {
   return (
-    <div className="lg:grid grid-cols-4">
+    <div className="lg:grid grid-cols-4 px-10">
       {products?.map((product) => (
         <ProductCard key={product._id} product={product} />
       ))}
