@@ -1,6 +1,9 @@
 import React from "react";
 import RootLayout from "@/components/Layout/RootLayout";
 import Image from "next/image";
+import { Rate } from 'antd';
+import { Collapse} from 'antd';
+import { BsArrowReturnRight } from "react-icons/bs";
 
 const ProductDetailPage = ({ product }) => {
   console.log(product);
@@ -9,14 +12,14 @@ const ProductDetailPage = ({ product }) => {
       <div className="h-screen flex flex-col justify-center items-center"><div className="lg:grid grid-cols-12 gap-10">
         <div className="lg:col-span-5">
           <Image
-            src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB"
-            width={500}
+            src="https://www.startech.com.bd/image/cache/catalog/ram/cosair/vengeance-lpx/vengeance-lpx-01-500x500.webp"
+            width={450}
             height={350}
             alt="component"
           ></Image>
         </div>
         <div className="lg:col-span-7 flex flex-col  pl-10">
-          <p className="text-3xl font-bold text-navy-700">{product?.name}</p>
+          <p className="text-2xl font-bold text-navy-700 mt-0">{product?.name}</p>
           <p className="mt-1 text-lg font-medium text-gray-600 md:mt-2">
             Category : {product?.category}
           </p>
@@ -26,8 +29,14 @@ const ProductDetailPage = ({ product }) => {
           <p className="mt-1 text-lg font-medium text-gray-600 md:mt-2">
             Status : {product?.status}
           </p>
+          {product.rating && <p className="mt-1 text-lg font-medium text-gray-600 md:mt-2">
+            Rating : <Rate allowHalf defaultValue={Number(product.rating)} />
+          </p>}
           <p className="mt-1 text-lg font-medium text-gray-600 md:mt-2">
-            Rating : {product?.rating}
+            Individual Rating : {product.individualRating}
+          </p>
+          <p className="mt-1 text-lg font-medium text-gray-600 md:mt-2">
+            Average Rating : {product.averageRating}
           </p>
         </div>
       </div></div>
@@ -38,7 +47,7 @@ const ProductDetailPage = ({ product }) => {
             <h1 className="text-2xl">Key Features</h1>
             <table className="w-full border-collapse border border-gray-300">
               <tbody>
-                {Object.entries(product.keyFeatures).map(([key, value]) => (
+                {product.keyFeatures && Object.entries(product.keyFeatures).map(([key, value]) => (
                   <tr key={key} className="border-b border-gray-300 text-lg">
                     <td className="border-2 bor border-black p-2 font-semibold">{key}</td>
                     <td className="border border-gray-300 p-2">{value}</td>
@@ -50,8 +59,24 @@ const ProductDetailPage = ({ product }) => {
           <div className="lg:col-span-7">
             <h1 className="text-2xl">Description</h1>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati aut accusantium delectus ea nulla voluptatem corrupti iste vero quia! Voluptatibus dolorum doloremque id, esse cum atque nesciunt? Impedit eius nihil facere iste atque ullam molestias reprehenderit saepe, tenetur culpa, ipsa aliquam. Nisi, sed error laboriosam nulla enim est optio eligendi blanditiis consectetur alias, quia, odio quisquam nihil. Fugiat repellat voluptatem autem, adipisci similique itaque veritatis amet consequatur eligendi minima modi obcaecati totam labore est officia, magni cumque ipsam quibusdam dignissimos eius ea. Atque repudiandae quia inventore ab, tempore, veniam odio vero consequuntur iste delectus, quisquam cumque magnam eum? Exercitationem?</p>
+            <p>{product.description}</p>
           </div>
+        </div>
+        <div>
+          <h2 className="my-10 text-center">Customer Reviews</h2>
+          {
+            product.reviews.map(review => <div key={review.username}>
+              <Collapse
+                items={[
+                  {
+
+                    label: (review.username),
+                    children: <p><BsArrowReturnRight/>{" "}{review.reviewText}</p>,
+                  },
+                ]}
+              />
+            </div>)
+          }
         </div>
       </div>
     </section>
