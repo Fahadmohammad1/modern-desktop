@@ -4,7 +4,7 @@ import ProductCardTwo from "@/components/UI/ProductCardTwo";
 
 const ChooseProductPage = ({ products }) => {
   return (
-    <section className="lg:w-[60%] mx-auto mt-10">
+    <section className="lg:w-[60%] mx-auto pt-10">
         <div className=""> 
         {
             products?.map(product => <ProductCardTwo key={product._id} product={product}/>)

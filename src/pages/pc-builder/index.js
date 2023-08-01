@@ -81,13 +81,13 @@ const PcBuilderPage = () => {
               <div className="flex justify-between items-center mb-10">
                 <div className="flex gap-5 items-center">
                   {category.icon}
-                  <p>{category.name}</p>
+                  <p className="font-bold">{category.name}</p>
                 </div>
                 <div>
                   {userProducts.some((product) => product.category.toUpperCase() === category.category.toUpperCase()) ? (
                     <button
                       onClick={() => handleCancelProduct(category.category)}
-                      className="rounded-full border-0 px-2 py-1 bg-red-400"
+                      className="rounded-full border-0 px-3 py-2 bg-red-400 hover:bg-red-500 font-bold"
                     >
                       Cancel
                     </button>
@@ -96,7 +96,7 @@ const PcBuilderPage = () => {
                       onClick={() =>
                         router.push(`/pc-builder/category/${category.category}`)
                       }
-                      className="rounded-full border-0 px-2 py-1 bg-blue-300"
+                      className="rounded-full border-0 px-3 py-2 bg-blue-300 hover:bg-blue-500 font-bold"
                     >
                       Choose
                     </button>
@@ -114,8 +114,8 @@ const PcBuilderPage = () => {
                       <div>
                         <Image
                           src={product.image}
-                          width={60}
-                          height={60}
+                          width={80}
+                          height={70}
                           alt="product"
                         />
                       </div>
@@ -128,6 +128,7 @@ const PcBuilderPage = () => {
             </Card>
           </div>
         ))}
+       {userProducts.length >= 5 && <button className="rounded-full border-0 px-3 py-2 bg-blue-300 hover:bg-blue-500 font-bold my-3">Complete Build</button>}
       </Card>
     </section>
   );
