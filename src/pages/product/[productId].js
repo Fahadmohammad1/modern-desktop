@@ -101,13 +101,13 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  // if(typeof window === 'undefined') {
-  //   return {
-  //     props : {
-  //       product : {}
-  //     }
-  //   }
-  // }
+  if(typeof window === 'undefined') {
+    return {
+      props : {
+        product : {}
+      }
+    }
+  }
   const { params } = context;
   const res = await fetch(`${process.env.URL}/products/${params.productId}`);
   const data = await res.json();
