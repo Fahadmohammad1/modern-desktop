@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "image": "/image/link2",
+      "image": "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-7-5800x/ryzen-7-5800x-01-500x500.jpg",
       "name": "AMD Ryzen 7 5800X 8-core Processor",
       "category": "CPU",
       "price": "25000",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "image": "/image/link1",
+      "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/asrock/h81m-vg4-r4-0/h81m-vg4-r4-0-01-500x500.jpg",
       "name": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
       "category": "Motherboard",
       "price": "8000",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "image": "/image/link4",
+      "image": "https://www.startech.com.bd/image/cache/catalog/ram/cosair/vengeance-lpx/vengeance-lpx-01-500x500.webp",
       "name": "Corsair Vengeance LPX 16GB DDR4 RAM",
       "category": "RAM",
       "price": "5000",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "image": "/image/link5",
+      "image": "https://www.startech.com.bd/image/cache/catalog/ssd/samsung/970-evo-plus-1tb/970-evo-plus-1tb-500x500.jpg",
       "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
       "category": "Storage",
       "price": "12000",
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "image": "/image/link6",
+      "image": "https://images.evga.com/products/gallery/png/210-GQ-0750-V1_LG_1.png",
       "name": "EVGA 750 GQ 80+ Gold 750W PSU",
       "category": "Power Supply",
       "price": "8000",
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "image": "/image/link9",
+      "image": "https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/227b376e-c8b6-443d-b578-487704537f1d/md06064916-zoom-01-jpg",
       "name": "LG 27GL850-B 27 Inch QHD Gaming Monitor",
       "category": "Monitor",
       "price": "18000",
@@ -190,7 +190,7 @@
       ]
     },
     {
-      "image": "/image/link5",
+      "image": "https://www.startech.com.bd/image/cache/catalog/ram/gskill/trident-tz5k-rgb/trident-tz5k-rgb-01-500x500.jpg",
       "name": "G.SKILL Trident Z RGB Series 16GB DDR4 RAM",
       "category": "RAM",
       "price": "5500",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "image": "/image/link6",
+      "image": "https://www.performance-pcs.com/media/amasty/webp/catalog/product/cache/a17cfde780b1af9e58d06cf1c44be8a3/b/l/bl2k8g30c15u4b_01_1.webp",
       "name": "Crucial Ballistix 32GB DDR4 RAM",
       "category": "RAM",
       "price": "9000",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "image": "/image/link7",
+      "image": "https://e7.pngegg.com/pngimages/475/685/png-clipart-black-fury-hyper-ddr4-ram-stick-ddr4-sdram-random-access-memory-kingston-technology-dimm-computer-data-storage-ram-electronics-usb-flash-drive-thumbnail.png",
       "name": "Kingston HyperX Fury 8GB DDR4 RAM",
       "category": "RAM",
       "price": "3500",
@@ -282,8 +282,8 @@
       ]
     },
     {
-      "image": "/image/link8",
-      "name": "Corsair Dominator Platinum 64GB DDR4 RAM",
+      "image": "https://www.startech.com.bd/image/cache/catalog/ram/cosair/dominator-platinum-rgb/dominator-platinum-rgb-05-500x500.webp",
+      "name": "Corsair Dominator Platinum 8GB DDR4 RAM",
       "category": "RAM",
       "price": "18000",
       "status": "In Stock",
@@ -313,7 +313,7 @@
       ]
     },
     {
-      "image": "/image/cpu-link1",
+      "image": "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-7-5800x/ryzen-7-5800x-01-500x500.jpg",
       "name": "AMD Ryzen 7 5800X",
       "category": "CPU",
       "price": "30000",
@@ -348,7 +348,7 @@
       ]
     },
     {
-      "image": "/image/cpu-link2",
+      "image": "https://www.startech.com.bd/image/cache/catalog/processor/intel/i9-12900ks/i9-12900ks-01-500x500.jpg",
       "name": "Intel Core i9-11900K",
       "category": "CPU",
       "price": "35000",
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "image": "/image/cpu-link3",
+      "image": "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-9-5950x/ryzen-9-5950x-1-500x500.jpg",
       "name": "AMD Ryzen 9 5950X",
       "category": "CPU",
       "price": "45000",
@@ -410,7 +410,7 @@
       ]
     },
     {
-      "image": "/image/cpu-link4",
+      "image": "https://www.startech.com.bd/image/cache/catalog/processor/intel/i7-12700k/i7-12700k-01-500x500.jpg",
       "name": "Intel Core i7-11700K",
       "category": "CPU",
       "price": "28000",
@@ -441,7 +441,7 @@
       ]
     },
     {
-      "image": "/image/monitor-link1",
+      "image": "https://www.startech.com.bd/image/cache/catalog/monitor/asus/rog-swift-pg259qnr/rog-swift-pg259qnr-04-500x500.jpg",
       "name": "ASUS ROG Swift PG279Q",
       "category": "Monitor",
       "price": "25000",
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "image": "/image/monitor-link2",
+      "image": "https://www.startech.com.bd/image/cache/catalog/desktop-pc/all-in-one/dell/optiplex-5400/optiplex-5400-01-500x500.webp",
       "name": "Dell S2721DGF",
       "category": "Monitor",
       "price": "20000",
@@ -506,7 +506,7 @@
       ]
     },
     {
-      "image": "/image/monitor-link3",
+      "image": "https://www.startech.com.bd/image/cache/catalog/monitor/lg-monitor/27gp850-b/27gp850-b-1-500x500.jpg",
       "name": "LG 27GL850-B",
       "category": "Monitor",
       "price": "22000",
@@ -538,7 +538,7 @@
       ]
     },
     {
-      "image": "/image/monitor-link4",
+      "image": "https://www.startech.com.bd/image/cache/catalog/monitor/acer/nitro-vg270/nitro-vg270-01-500x500.webp",
       "name": "Acer Predator XB271HU",
       "category": "Monitor",
       "price": "27000",
@@ -570,7 +570,7 @@
       ]
     },
     {
-      "image": "/image/motherboard-link1",
+      "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/asus/rog-strix-z590-f-gaming-wi-fi/rog-strix-z590-f-gaming-wi-fi-500x500.jpg",
       "name": "ASUS ROG Strix Z590-E Gaming",
       "category": "Motherboard",
       "price": "22000",
@@ -601,7 +601,7 @@
       ]
     },
     {
-      "image": "/image/motherboard-link2",
+      "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/gigabyte/aorus-x570-elite/x570-aorus-elite-500x500.jpg",
       "name": "GIGABYTE X570 AORUS Elite",
       "category": "Motherboard",
       "price": "17000",
@@ -632,7 +632,7 @@
       ]
     },
     {
-      "image": "/image/motherboard-link3",
+      "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/msi/mag-b550-tomahawk/mag-b550-tomahawk-500x500.jpg",
       "name": "MSI MAG B550 TOMAHAWK",
       "category": "Motherboard",
       "price": "15000",
@@ -663,7 +663,7 @@
       ]
     },
     {
-      "image": "/image/motherboard-link4",
+      "image": "https://www.startech.com.bd/image/cache/catalog/motherboard/asrock/b560m-steel-legend/b560m-steel-legend-001-500x500.jpg",
       "name": "ASRock B560M Steel Legend",
       "category": "Motherboard",
       "price": "13000",
@@ -694,7 +694,7 @@
       ]
     },
     {
-      "image": "https://example.com/powersupply-link1.jpg",
+      "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/corsair/rm750xwhite/corsair-rm-750-x-750-watt-80-plus-gold-certified-power-supply-white01-500x500.jpg",
       "name": "Corsair RM750x 750W 80+ Gold",
       "category": "Power Supply",
       "price": "9000",
@@ -726,7 +726,7 @@
       ]
     },
     {
-      "image": "https://example.com/powersupply-link2.jpg",
+      "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/evga/supernova-2000-g1-plus/supernova-2000-g1-plus-01-500x500.webp",
       "name": "EVGA SuperNOVA 850 G3 850W 80+ Gold",
       "category": "Power Supply",
       "price": "10000",
@@ -758,7 +758,7 @@
       ]
     },
     {
-      "image": "https://example.com/powersupply-link3.jpg",
+      "image": "https://m.media-amazon.com/images/I/711fBPUnTAL._AC_SX679_.jpg",
       "name": "Seasonic Focus GX-650 650W 80+ Gold",
       "category": "Power Supply",
       "price": "8000",
@@ -790,7 +790,7 @@
       ]
     },
     {
-      "image": "https://example.com/powersupply-link4.jpg",
+      "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/thermaltake/toughpower-gf1-750w-gold/toughpower-gf1-750w-gold-500x500.jpg",
       "name": "Thermaltake Toughpower GF1 750W 80+ Gold",
       "category": "Power Supply",
       "price": "9500",
@@ -822,7 +822,7 @@
       ]
     },
     {
-      "image": "https://example.com/storage-link1.jpg",
+      "image": "https://www.startech.com.bd/image/cache/catalog/ssd/samsung/970-evo-plus-1tb/970-evo-plus-1tb-500x500.jpg",
       "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
       "category": "Storage",
       "price": "8000",
@@ -852,8 +852,8 @@
       ]
     },
     {
-      "image": "https://example.com/storage-link2.jpg",
-      "name": "Western Digital Blue 2TB SATA SSD",
+      "image": "https://www.startech.com.bd/image/cache/catalog/ssd/western-digital/sa510/sa510-01-500x500.webp",
+      "name": "Western Digital Blue SA510 250GB",
       "category": "Storage",
       "price": "12000",
       "status": "In Stock",
@@ -882,7 +882,7 @@
       ]
     },
     {
-      "image": "https://example.com/storage-link3.jpg",
+      "image": "https://www.startech.com.bd/image/cache/catalog/hdd/seagate/4tb-hdd/4tb-500x500.jpg",
       "name": "Seagate BarraCuda 4TB HDD",
       "category": "Storage",
       "price": "6000",
@@ -911,8 +911,8 @@
       ]
     },
     {
-      "image": "https://example.com/storage-link4.jpg",
-      "name": "Crucial MX500 500GB SATA SSD",
+      "image": "https://www.startech.com.bd/image/cache/catalog/ssd/crucial/mx500/mx500-01-500x500.webp",
+      "name": "Crucial MX500 1TB 3D NAND SATA",
       "category": "Storage",
       "price": "5000",
       "status": "Out of Stock",

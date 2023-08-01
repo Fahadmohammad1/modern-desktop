@@ -8,13 +8,13 @@ const ProductCard = ({ product }) => {
     <section className="mb-5">
       <div className="flex flex-col justify-center items-center">
         <Link href={`/product/${product._id}`}>
-        <div className="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 w-full !p-4 3xl:p-![18px]">
+        <div className="!z-5 relative flex flex-col rounded-[10px] max-w-[300px]  bg-clip-border w-full !p-4 3xl:p-![18px]">
           <div className="h-full w-full">
             <div className="relative w-full">
               <Image
                 width={400}
                 height={400}
-                src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB"
+                src={product.image}
                 className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full"
                 alt="product"
               />

@@ -6,13 +6,13 @@ import { Collapse} from 'antd';
 import { BsArrowReturnRight } from "react-icons/bs";
 
 const ProductDetailPage = ({ product }) => {
-  console.log(product);
+  
   return (
     <section className="gap-y-20 ">
       <div className="h-screen flex flex-col justify-center items-center"><div className="lg:grid grid-cols-12 gap-10">
         <div className="lg:col-span-5">
           <Image
-            src="https://www.startech.com.bd/image/cache/catalog/ram/cosair/vengeance-lpx/vengeance-lpx-01-500x500.webp"
+            src={product.image}
             width={450}
             height={350}
             alt="component"
