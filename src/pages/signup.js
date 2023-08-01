@@ -1,31 +1,34 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import {
-  useAuthState,
-  useCreateUserWithEmailAndPassword,
-} from "react-firebase-hooks/auth";
 import Link from "next/link";
 import auth from "@/firebase/firebase.auth";
 import Image from "next/image";
+import { useAuthState, useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useRouter } from "next/router";
 
 const SignUpPage = () => {
   const [user, loading] = useAuthState(auth);
-  console.log(user);
+  const router = useRouter()
 
   const {
     register,
-    formState: { errors },
     handleSubmit,
     reset,
   } = useForm();
 
-  const [createUserWithEmailAndPassword, eUser, eLoading, eError] =
-    useCreateUserWithEmailAndPassword(auth);
+  const [
+    createUserWithEmailAndPassword,
+    eUser,
+    eLoading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth);
 
   const onSubmit = async (data) => {
-    await createUserWithEmailAndPassword(data.Email, data.Password);
-    console.log(data);
+    await createUserWithEmailAndPassword(data.email, data.password);
     reset();
+    if (eUser.email) {
+      router.push('/')
+    }
   };
 
   if (loading || eLoading) {

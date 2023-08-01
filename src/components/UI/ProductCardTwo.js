@@ -6,16 +6,11 @@ import React from "react";
 const ProductCardTwo = ({ product }) => {
   const router = useRouter()
 
-  const [addToBuilder, {isLoading, isSuccess}] = useAddToBuilderMutation()
-
   const handleAddToBuilder = (product) => {
-    const data = {
-      email : 'tanvir@gmail.com',
-      products: [
-        {...product}
-      ]
-    }
-    addToBuilder(data)
+    const data = JSON.parse(localStorage.getItem('products')) || []
+    data.push(product)
+
+    localStorage.setItem('products', JSON.stringify(data))
     router.push({
       pathname: '/pc-builder',
     });
@@ -24,7 +19,7 @@ const ProductCardTwo = ({ product }) => {
     <div className="mb-8 lg:flex lg:gap-10 shadow-xl p-5 rounded-xl">
       <div className="flex items-center lg:p-5">
         <Image
-          src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB"
+          src={product.image}
           width={280}
           height={200}
           alt="components"

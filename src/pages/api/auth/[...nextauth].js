@@ -9,7 +9,7 @@ export const authOptions = {
     }),
   ],
   pages: {
-    signIn: "https://modern-desktop.vercel.app/login",
+    signIn: `${process.env.NEXTAUTH_URL}/login`,
   },
 };
 

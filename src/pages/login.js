@@ -5,20 +5,26 @@ import { signIn } from "next-auth/react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import auth from "@/firebase/firebase.auth";
+import { useRouter } from "next/router";
 
 const LoginPage = () => {
+  const router = useRouter()
   const { register, handleSubmit, reset } = useForm();
 
-  const [signInWithEmailAndPassword, user, loading] =
+  const [signInWithEmailAndPassword, eUser, eLoading] =
     useSignInWithEmailAndPassword(auth);
 
-  const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.Email, data.Password);
-
+  const onSubmit = async (data) => {
+   await signInWithEmailAndPassword(data.email, data.password);
     reset();
+
+    // if (eUser.email) {
+    //   router.push('/')
+    // }
+    console.log(data);
   };
 
-  if (loading) {
+  if (eLoading) {
     return <p>Loading...</p>;
   }
   return (
@@ -35,7 +41,7 @@ const LoginPage = () => {
               <div className="btn-wrapper text-center">
                 <button
                   onClick={() =>
-                    signIn("github", { callbackUrl: "http://localhost:3000" })
+                    signIn("github", { callbackUrl: "http://localhost:3000/pc-builder" })
                   }
                   className="bg-white active:bg-blueGray-50 text-blueGray-700  px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                   type="button"

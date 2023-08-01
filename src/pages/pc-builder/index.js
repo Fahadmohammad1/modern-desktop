@@ -1,5 +1,5 @@
 import { Card } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import RootLayout from "@/components/Layout/RootLayout";
 import { BsCpu, BsDeviceHdd, BsMotherboard } from "react-icons/bs";
 import { CiMonitor } from "react-icons/ci";
@@ -8,8 +8,16 @@ import { CgSmartphoneRam } from "react-icons/cg";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const PcBuilderPage = ({ products }) => {
-  console.log(products);
+const PcBuilderPage = () => {
+  const [userProducts , setUserProducts] = useState([])
+
+  useEffect(() => {
+    if(typeof window !== 'undefined'){
+      const data = JSON.parse(localStorage.getItem('products')) || []
+      setUserProducts(data)
+    }
+  }, [])
+  
   const categories = [
     {
       key: "1",
@@ -67,17 +75,27 @@ const PcBuilderPage = ({ products }) => {
                   <p>{category.name}</p>
                 </div>
                 <div>
-                  <button
-                    onClick={() =>
-                      router.push(`/pc-builder/category/${category.category}`)
-                    }
-                    className="btn p-1"
-                  >
-                    Choose
-                  </button>
-                </div>
+            {userProducts.some((product) => product.category.toUpperCase() === category.category.toUpperCase()) ? (
+              <button
+                
+                className="rounded-full border-0 px-2 py-1 bg-red-400"
+              >
+                Cancel
+              </button>
+            ) : (
+              <button
+                onClick={() =>
+                  router.push(`/pc-builder/category/${category.category}`)
+                }
+                className="rounded-full border-0 px-2 py-1 bg-blue-300"
+              >
+                Choose
+              </button>
+            )}
+          </div>
+
               </div>
-              {products?.map(
+              {userProducts?.map(
                 (product) =>
                   product.category.toUpperCase() === category.category && (
                     <div
@@ -86,7 +104,7 @@ const PcBuilderPage = ({ products }) => {
                     >
                       <div>
                         <Image
-                          src="https://www.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2022/06/best_gaming_monitor_-_lead.jpg?itok=H1VS07mB"
+                          src={product.image}
                           width={60}
                           height={60}
                           alt="product"
@@ -112,15 +130,14 @@ PcBuilderPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-export const getServerSideProps = async (context) => {
-  const { params } = context;
-  const email = "tanvir@gmail.com";
-  const res = await fetch(`${process.env.URL}/builder-products/${email}`);
-  const data = await res.json();
+// export const getServerSideProps = async () => {
+  
+//   const res = await fetch(`${process.env.URL}/builder-products/${email}`);
+//   const data = await res.json();
 
-  return {
-    props: {
-      products: data?.data?.products || [],
-    },
-  };
-};
+//   return {
+//     props: {
+//       products: data?.data?.products || [],
+//     },
+//   };
+// };
