@@ -19,7 +19,7 @@ const ProductCardTwo = ({ product }) => {
   };
   return (
     <div className="mb-8 lg:flex lg:gap-10 shadow-xl p-5 rounded-xl">
-      <div className="flex items-center lg:p-5">
+      <div className="flex lg:items-center justify-center lg:p-5">
         <Image
           src={product.image}
           width={280}
@@ -41,7 +41,7 @@ const ProductCardTwo = ({ product }) => {
         <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">
           Rating : {product.rating}
         </p>
-        <div className="flex justify-end -mt-8">
+        <div className="flex justify-end lg:-mt-8 -mt-9">
           <button className="rounded-full border-0 px-3 py-2 bg-blue-300 hover:bg-blue-500 font-bold" onClick={() => handleAddToBuilder(product)}>Add To Builder</button>
         </div>
       </div>

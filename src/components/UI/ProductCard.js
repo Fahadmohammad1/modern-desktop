@@ -1,3 +1,4 @@
+import { Rate } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,7 +6,7 @@ import React from "react";
 const ProductCard = ({ product }) => {
   
   return (
-    <section className="mb-5">
+    <section className="lg:mb-5">
       <div className="flex flex-col justify-center items-center">
         <Link href={`/product/${product._id}`}>
         <div title="Click to view details" className="!z-5 relative flex flex-col rounded-[10px] max-w-[300px]  bg-clip-border w-full !p-4 3xl:p-![18px] hover:shadow-xl">
@@ -19,8 +20,8 @@ const ProductCard = ({ product }) => {
                 alt="product"
               />
             </div>
-            <div className="mb-3 flex items-center justify-between px-1 md:items-start">
-              <div className="mb-2">
+            <div className="lg:mb-3 flex items-center justify-between px-1 md:items-start">
+              <div className="mb-2 text-center lg:text-start w-full">
                 <p className="text-base font-bold text-navy-700">
                   {product.name}
                 </p>
@@ -33,9 +34,9 @@ const ProductCard = ({ product }) => {
                 <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">
                  Status : {product.status}
                 </p>
-                <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">
-                  Rating : {product.rating}
-                </p>
+                {product.rating && <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">
+                  Rating : <Rate allowHalf defaultValue={Number(product.rating)}/>
+                </p>}
               </div>
             </div>
           </div>

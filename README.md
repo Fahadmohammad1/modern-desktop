@@ -32,3 +32,7 @@ Github : [https://github.com/Fahadmohammad1/modern-desktop]
 
 * By clicking on the cancel button, the selection will be canceled.
 * A Complete Build button will appear after selecting at least five products.
+
+### Authentication
+* By using the Firebase Authentication System, users may log in and register by entering their email address and password.
+* Additionally, users can log in using Google and Github. It was created using Next-Auth, which was provided by Next.js

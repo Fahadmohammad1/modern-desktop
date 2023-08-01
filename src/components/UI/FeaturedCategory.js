@@ -13,7 +13,7 @@ const FeaturedCategory = () => {
       <h2 className="text-center my-10">Featured Categories</h2>
       <div className="lg:grid grid-cols-4 gap-5">
         <Link href="/category/cpu">
-        <Card className="flex flex-col justify-center items-center shadow-xl">
+        <Card className="flex flex-col justify-center items-center shadow-xl hover:shadow-2xl mb-6 lg:mb-0">
           <div className="flex justify-center">
             <BsCpu className="text-7xl" />
           </div>
@@ -21,7 +21,7 @@ const FeaturedCategory = () => {
         </Card>
         </Link>
         <Link href="/category/motherboard">
-        <Card className="flex flex-col justify-center items-center shadow-xl">
+        <Card className="flex flex-col justify-center items-center shadow-xl hover:shadow-2xl mb-6 lg:mb-0">
           <div className="flex justify-center">
             <BsMotherboard className="text-7xl" />
           </div>
@@ -29,7 +29,7 @@ const FeaturedCategory = () => {
         </Card>
         </Link>
         <Link href="/category/ram">
-        <Card className="flex flex-col justify-center items-center shadow-xl">
+        <Card className="flex flex-col justify-center items-center shadow-xl hover:shadow-2xl mb-6 lg:mb-0">
           <div className="flex justify-center">
             <CgSmartphoneRam className="text-7xl" />
           </div>
@@ -37,7 +37,7 @@ const FeaturedCategory = () => {
         </Card>
         </Link>
         <Link href="/category/power supply">
-        <Card className="flex flex-col justify-center items-center shadow-xl">
+        <Card className="flex flex-col justify-center items-center shadow-xl hover:shadow-2xl mb-6 lg:mb-0">
           <div className="flex justify-center">
             <MdOutlinePower className="text-7xl" />
           </div>
@@ -45,7 +45,7 @@ const FeaturedCategory = () => {
         </Card>
         </Link>
         <Link href="/category/storage">
-        <Card className="flex flex-col justify-center items-center shadow-xl">
+        <Card className="flex flex-col justify-center items-center shadow-xl hover:shadow-2xl mb-6 lg:mb-0">
           <div className="flex justify-center">
             <BsDeviceHdd className="text-7xl" />
           </div>
@@ -53,7 +53,7 @@ const FeaturedCategory = () => {
         </Card>
         </Link>
         <Link href="/category/monitor">
-        <Card className="flex flex-col justify-center items-center shadow-xl">
+        <Card className="flex flex-col justify-center items-center shadow-xl hover:shadow-2xl mb-6 lg:mb-0">
           <div className="flex justify-center">
             <CiMonitor className="text-7xl" />
           </div>

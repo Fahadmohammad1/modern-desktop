@@ -7,6 +7,7 @@ import { MdOutlinePower } from "react-icons/md";
 import { CgSmartphoneRam } from "react-icons/cg";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Swal from "sweetalert2";
 
 const PcBuilderPage = () => {
   const [userProducts, setUserProducts] = useState([])
@@ -62,7 +63,7 @@ const PcBuilderPage = () => {
 
     const filteredData = data.filter(p => p.category.toUpperCase() !== category.toUpperCase())
     localStorage.setItem('products', JSON.stringify(filteredData))
-    
+
     setUserProducts(filteredData)
   }
 
@@ -70,7 +71,7 @@ const PcBuilderPage = () => {
 
   return (
     <section className="flex justify-center pt-8">
-      <Card bordered={true} className="shadow-lg px-5 text-center lg:w-3/4">
+      <Card bordered={true} className="shadow-lg lg:px-5 text-center lg:w-3/4">
         <h1 className="text-center my-5 uppercase">
           Build Your Dream Pc With Your Favourite Components
         </h1>
@@ -128,7 +129,13 @@ const PcBuilderPage = () => {
             </Card>
           </div>
         ))}
-       {userProducts.length >= 5 && <button className="rounded-full border-0 px-3 py-2 bg-blue-300 hover:bg-blue-500 font-bold my-3">Complete Build</button>}
+        {userProducts.length >= 5 && <button onClick={() => Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Build Successfull',
+          showConfirmButton: false,
+          timer: 1500
+        })} className="rounded-full border-0 px-3 py-2 bg-blue-300 hover:bg-blue-500 font-bold my-3">Complete Build</button>}
       </Card>
     </section>
   );

@@ -14,11 +14,11 @@ const Home = ({ children }) => {
     token: { colorBgContainer },
   } = theme.useToken();
 
-  if(loading){
+  if (loading) {
     return <p>Loading...</p>
   }
   return (
-    <Layout className="layout">
+    <Layout className="layout bg-white">
       <Header className="lg:flex bg-white justify-between items-center">
         <div
           className="demo-logo"
@@ -37,8 +37,9 @@ const Home = ({ children }) => {
             <DropdownMenu />
           </div>
         </div>
-        <Menu mode="horizontal" defaultSelectedKeys={["2"]}>
-          {(!session?.user || !user.email) ? (
+        
+        <Menu  mode="horizontal" className="sm:flex justify-center">
+          {(!session?.user | !user?.email) ? (
             <Button className="mr-3 font-bold" type="dashed">
               <Link href="/login">Login</Link>
             </Button>
@@ -67,7 +68,7 @@ const Home = ({ children }) => {
         </div>
       </Content>
       <Footer
-       className="text-center my-5"
+        className="text-center my-5"
       >
         Copyright ©2023 Created by Modern Desktop Bangladesh
       </Footer>

@@ -24,9 +24,9 @@ const SignUpPage = () => {
   ] = useCreateUserWithEmailAndPassword(auth);
 
   const onSubmit = async (data) => {
-    await createUserWithEmailAndPassword(data.email, data.password);
+    await createUserWithEmailAndPassword(data?.email, data?.password);
     reset();
-    if (eUser.email) {
+    if (eUser?.user?.email) {
       router.push('/')
     }
   };

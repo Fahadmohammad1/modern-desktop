@@ -2,26 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { signIn } from "next-auth/react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import auth from "@/firebase/firebase.auth";
 import { useRouter } from "next/router";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 const LoginPage = () => {
   const router = useRouter()
   const { register, handleSubmit, reset } = useForm();
 
-  const [signInWithEmailAndPassword, eUser, eLoading] =
-    useSignInWithEmailAndPassword(auth);
+  const [
+    signInWithEmailAndPassword,
+    eUser,
+    eLoading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
 
   const onSubmit = async (data) => {
-   await signInWithEmailAndPassword(data.email, data.password);
+    await signInWithEmailAndPassword(data.email, data.password);
     reset();
 
-    // if (eUser.email) {
-    //   router.push('/')
-    // }
-    console.log(data);
+    if (eUser?.user?.email) {
+      router.push('/')
+    }
   };
 
   if (eLoading) {

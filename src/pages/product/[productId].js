@@ -8,18 +8,18 @@ import { BsArrowReturnRight } from "react-icons/bs";
 const ProductDetailPage = ({ product }) => {
   
   return (
-    <section className="gap-y-20 ">
-      <div className="h-screen flex flex-col justify-center items-center"><div className="lg:grid grid-cols-12 gap-10">
-        <div className="lg:col-span-5">
+    <section className="lg:gap-y-20 lg:mt-0 mt-12">
+      <div className="lg:h-screen flex flex-col justify-center items-center"><div className="lg:grid grid-cols-12 gap-10">
+        <div className="lg:col-span-5 lg:px-0 px-3">
           <Image
             src={product.image}
-            width={450}
+            width={400}
             height={350}
             alt="component"
           ></Image>
         </div>
-        <div className="lg:col-span-7 flex flex-col  pl-10">
-          <p className="text-2xl font-bold text-navy-700 mt-0">{product?.name}</p>
+        <div className="lg:col-span-7 flex flex-col lg:pl-10 lg:text-start text-center">
+          <p className="lg:text-2xl text-xl font-bold text-navy-700 mt-0">{product?.name}</p>
           <p className="mt-1 text-lg font-medium text-gray-600 md:mt-2">
             Category : {product?.category}
           </p>
