@@ -9,15 +9,15 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 const PcBuilderPage = () => {
-  const [userProducts , setUserProducts] = useState([])
+  const [userProducts, setUserProducts] = useState([])
 
   useEffect(() => {
-    if(typeof window !== 'undefined'){
+    if (typeof window !== 'undefined') {
       const data = JSON.parse(localStorage.getItem('products')) || []
       setUserProducts(data)
     }
   }, [])
-  
+
   const categories = [
     {
       key: "1",
@@ -57,10 +57,19 @@ const PcBuilderPage = () => {
     },
   ];
 
+  const handleCancelProduct = (category) => {
+    const data = JSON.parse(localStorage.getItem('products')) || []
+
+    const filteredData = data.filter(p => p.category.toUpperCase() !== category.toUpperCase())
+    localStorage.setItem('products', JSON.stringify(filteredData))
+    
+    setUserProducts(filteredData)
+  }
+
   const router = useRouter();
 
   return (
-    <section className="flex justify-center mt-8">
+    <section className="flex justify-center pt-8">
       <Card bordered={true} className="shadow-lg px-5 text-center lg:w-3/4">
         <h1 className="text-center my-5 uppercase">
           Build Your Dream Pc With Your Favourite Components
@@ -75,24 +84,24 @@ const PcBuilderPage = () => {
                   <p>{category.name}</p>
                 </div>
                 <div>
-            {userProducts.some((product) => product.category.toUpperCase() === category.category.toUpperCase()) ? (
-              <button
-                
-                className="rounded-full border-0 px-2 py-1 bg-red-400"
-              >
-                Cancel
-              </button>
-            ) : (
-              <button
-                onClick={() =>
-                  router.push(`/pc-builder/category/${category.category}`)
-                }
-                className="rounded-full border-0 px-2 py-1 bg-blue-300"
-              >
-                Choose
-              </button>
-            )}
-          </div>
+                  {userProducts.some((product) => product.category.toUpperCase() === category.category.toUpperCase()) ? (
+                    <button
+                      onClick={() => handleCancelProduct(category.category)}
+                      className="rounded-full border-0 px-2 py-1 bg-red-400"
+                    >
+                      Cancel
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() =>
+                        router.push(`/pc-builder/category/${category.category}`)
+                      }
+                      className="rounded-full border-0 px-2 py-1 bg-blue-300"
+                    >
+                      Choose
+                    </button>
+                  )}
+                </div>
 
               </div>
               {userProducts?.map(
@@ -129,15 +138,3 @@ export default PcBuilderPage;
 PcBuilderPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
-
-// export const getServerSideProps = async () => {
-  
-//   const res = await fetch(`${process.env.URL}/builder-products/${email}`);
-//   const data = await res.json();
-
-//   return {
-//     props: {
-//       products: data?.data?.products || [],
-//     },
-//   };
-// };

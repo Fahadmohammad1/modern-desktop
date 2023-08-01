@@ -8,9 +8,11 @@ const ProductCardTwo = ({ product }) => {
 
   const handleAddToBuilder = (product) => {
     const data = JSON.parse(localStorage.getItem('products')) || []
-    data.push(product)
+    if(!data.some((p) => p.category.toUpperCase() === product.category.toUpperCase())) {
+      data.push(product)
+      localStorage.setItem('products', JSON.stringify(data))
+    }
 
-    localStorage.setItem('products', JSON.stringify(data))
     router.push({
       pathname: '/pc-builder',
     });

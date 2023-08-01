@@ -51,7 +51,7 @@ const Home = ({ children }) => {
         }}
       >
         <div
-          className="site-layout-content bg-base-100"
+          className="site-layout-content bg-white"
           style={{
             minHeight: "100vh",
           }}
