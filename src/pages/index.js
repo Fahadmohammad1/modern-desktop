@@ -30,13 +30,13 @@ Home.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-  if (typeof window === "undefined") {
-    return {
-      props: {
-        products: [],
-      },
-    };
-  }
+  // if (typeof window === "undefined") {
+  //   return {
+  //     props: {
+  //       products: [],
+  //     },
+  //   };
+  // }
 
   const res = await fetch(`${process.env.URL}/products`);
   const data = await res.json();

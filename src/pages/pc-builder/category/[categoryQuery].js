@@ -14,6 +14,8 @@ const ChooseProductPage = ({ products }) => {
   );
 };
 
+export default ChooseProductPage;
+
 ChooseProductPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
@@ -22,7 +24,7 @@ export const getServerSideProps = async (context) => {
   const { params } = context;
 
   const res = await fetch(
-    `http://localhost:5000/category?category=${params.categoryQuery}`
+    `${process.env.URL}/category?category=${params.categoryQuery}`
   );
   const data = await res.json();
 
@@ -33,4 +35,4 @@ export const getServerSideProps = async (context) => {
   };
 };
 
-export default ChooseProductPage;
+

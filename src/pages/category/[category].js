@@ -31,13 +31,13 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-    if (typeof window === "undefined") {
-      return {
-        props: {
-          products: []
-        },
-      };
-    }
+    // if (typeof window === "undefined") {
+    //   return {
+    //     props: {
+    //       products: []
+    //     },
+    //   };
+    // }
   const { params } = context;
 
   const res = await fetch(

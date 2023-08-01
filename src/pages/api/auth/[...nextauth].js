@@ -9,7 +9,7 @@ export const authOptions = {
     }),
   ],
   pages: {
-    signIn: `${process.env.NEXTAUTH_URL}/login`,
+    signIn: `${process.env.NEXTAUTH_URL}/auth/login`,
   },
 };
 
