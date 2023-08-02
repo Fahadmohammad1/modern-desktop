@@ -36,7 +36,7 @@ const DropdownMenu = () => (
     }}
   >
     <a onClick={(e) => e.preventDefault()}>
-      <Space style={{ fontSize: "17px", color: "black", fontWeight: "bold" }}>
+      <Space className="lg:text-[17px] text-xs" style={{ color: "black", fontWeight: "bold" }}>
         Categories
         <DownOutlined />
       </Space>

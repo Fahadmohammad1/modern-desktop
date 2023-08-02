@@ -31,7 +31,7 @@ const Home = ({ children }) => {
           }}
         >
           <Link href="/">
-            <div className="decoration-transparent lg:text-2xl font-bold font-serif">Modern Desktop</div>
+            <div className="decoration-transparent lg:text-2xl text-base md:text-lg font-bold font-serif">Modern Desktop</div>
           </Link>
           <div>
             <DropdownMenu />
