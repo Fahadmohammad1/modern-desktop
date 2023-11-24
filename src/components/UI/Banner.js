@@ -1,13 +1,15 @@
 import React from 'react';
 import { Carousel } from 'antd';
+import banner1 from '../../assets/banner-1.jpg'
+import Image from 'next/image';
 
 const Banner = () => (
   <Carousel autoplay className='mt-10 lg:mt-0 lg:h-screen'>
     <div>
-      <img className='w-full' src='https://www.techlandbd.com/image/cache/wp/gp/image-fixing/new-7years-slider-1024x476.webp' alt='banner'/>
+      <Image width={400} height={600} className='w-full' src={banner1} alt='banner' />
     </div>
     <div>
-      <img className='w-full' src="https://www.techlandbd.com/image/cache/wp/gp/image-fixing/new-7years-slider-1024x476.webp" alt="" />
+      <Image width={400} height={600} className='w-full' src={banner1} alt='banner' />
     </div>
   </Carousel>
 );
